@@ -1,2 +1,3 @@
-# sit-portfolio
-A repository representing a portfolio for the School of Information and Technology of KMUTT admission.
+# SIT Porfolio
+
+A website version of my portfolio for SIT KMUTT admission.
