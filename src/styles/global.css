@@ -19,7 +19,3 @@ h3 {
 em {
     @apply font-bold;
 }
-
-main {
-    @apply m-10 mr-15;
-}
