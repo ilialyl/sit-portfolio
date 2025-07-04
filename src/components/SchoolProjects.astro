@@ -3,10 +3,11 @@ import "../styles/global.css";
 import "../styles/projects.css";
 ---
 
-<section class="bg-stone-950 text-white pb-10">
-    <h2 class="ml-7 md:ml-10 py-10">SCHOOL PROJECTS</h2>
+<section class="bg-stone-950 text-white my-5 md:my-10 relative">
+    <h2 class="py-10 text-center">SCHOOL PROJECTS</h2>
     <div
-        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[10vw] no-scrollbar items-center"
+        id="scroll-container"
+        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-start"
     >
         <div class="project-card space-y-4">
             <h3 class="font-bold">Introduction to Software Engineering</h3>
@@ -79,4 +80,52 @@ import "../styles/projects.css";
             </p>
         </div>
     </div>
+    <button
+        id="scroll-prev"
+        class="absolute md:left-10 md:top-30 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
+        >&lt;</button
+    >
+    <button
+        id="scroll-next"
+        class="absolute md:right-10 md:top-30 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
+        >&gt;</button
+    >
+    <p class="text-center md:hidden">&lt;-- Scroll --&gt;</p>
 </section>
+
+<script>
+    // Get scrollable area
+    const container = document.getElementById("scroll-container");
+    // Get buttons
+    const next = document.getElementById("scroll-next");
+    const prev = document.getElementById("scroll-prev");
+
+    // If container and buttons exist and are HTML elements
+    if (
+        container instanceof HTMLElement &&
+        next instanceof HTMLElement &&
+        prev instanceof HTMLElement
+    ) {
+        // Get a sample of project card
+        const card = container.querySelector(".project-card");
+        // If project card exists and is an HTML element
+        if (card instanceof HTMLElement) {
+            // Get CSS styles applied to project card
+            const cardStyle = getComputedStyle(card);
+            // Get card width
+            const cardWidth =
+                card.offsetWidth + parseInt(cardStyle.marginRight || "0");
+
+            function scrollNext() {
+                container?.scrollBy({ left: cardWidth, behavior: "smooth" });
+            }
+
+            function scrollPrev() {
+                container?.scrollBy({ left: -cardWidth, behavior: "smooth" });
+            }
+
+            next.addEventListener("click", scrollNext);
+            prev.addEventListener("click", scrollPrev);
+        }
+    }
+</script>
