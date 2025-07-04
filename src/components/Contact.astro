@@ -3,23 +3,25 @@ import "../styles/global.css";
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="bg-stone-950 p-7 pr-20 overflow-x-auto">
+<div class="bg-stone-950 p-7 overflow-x-auto">
     <ul
-        class="text-white flex gap-5 md:gap-25 md:justify-center whitespace-nowrap"
+        class="text-white flex gap-5 justify-start md:gap-25 md:justify-center whitespace-nowrap"
     >
         <li class="flex gap-3 items-center">
             <Icon name="mail" class="w-7 h-7" />
-            lynzies**@sl.me
+            <span>lynzies**@sl.me</span>
         </li>
+
         <li class="flex gap-3 items-center">
             <Icon name="phone" class="w-7 h-7" />
-            +7z837fjv83a
+            <span>+7z837fjv83a</span>
         </li>
         <li class="flex gap-3 items-center">
             <a href="https://github.com/cyandizy">
                 <Icon name="github" class="w-7 h-7" /></a
             >
-            lyns0
+            <span>lyns0</span>
         </li>
+        <li class="min-w-2 md:hidden"></li>
     </ul>
 </div>
