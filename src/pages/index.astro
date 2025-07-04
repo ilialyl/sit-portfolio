@@ -5,6 +5,7 @@ import Preface from "../components/Preface.astro";
 import Profile from "../components/Profile.astro";
 import Contact from "../components/Contact.astro";
 import Education from "../components/Education.astro";
+import SchoolProjects from "../components/SchoolProjects.astro";
 ---
 
 <html lang="en">
@@ -19,13 +20,12 @@ import Education from "../components/Education.astro";
         <header>
             <NavBar />
         </header>
-        <main class="m-7 mr-15 md:mx-auto md:max-w-3xl">
-            <h1 id="preface">Preface</h1>
-            <Preface />
+        <main class="mr-12">
+            <Preface id="preface" />
+            <Profile id="profile" />
+            <Education id="education" />
+            <SchoolProjects id="school-projects" />
+            <Contact id="contact" />
         </main>
-        <Profile id="profile" />
-        <Education />
-        <main class="m-7 mr-15 md:mx-auto md:max-w-3xl"></main>
-        <Contact />
     </body>
 </html>
