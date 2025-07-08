@@ -148,7 +148,9 @@ import { Carousel } from "webcoreui/astro";
             <Carousel items={3}>
                 <li><img src="./projects/arino_2.png" /></li>
                 <li><img src="./projects/arino_3.png" /></li>
-                <li><img src="./projects/arino_1.png" /></li>
+                <li>
+                    <img src="./projects/arino_1.png" />
+                </li>
             </Carousel>
         </div>
 
@@ -199,12 +201,12 @@ import { Carousel } from "webcoreui/astro";
     </div>
     <button
         id="scroll-prev"
-        class="absolute md:left-10 md:top-30 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
+        class="absolute md:left-10 md:top-120 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
         >&lt;</button
     >
     <button
         id="scroll-next"
-        class="absolute md:right-10 md:top-30 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
+        class="absolute md:right-10 md:top-120 text-white font-bold text-4xl md:h-120 md:w-10 hidden md:block"
         >&gt;</button
     >
     <p class="text-center md:hidden">&lt;-- Scroll --&gt;</p>
