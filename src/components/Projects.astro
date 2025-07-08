@@ -3,18 +3,15 @@ import "../styles/global.css";
 import "../styles/projects.css";
 ---
 
-<section
-    id="school-projects"
-    class="bg-stone-950 text-white my-5 md:my-10 relative"
->
-    <h2 class="py-10 text-center">SCHOOL PROJECTS</h2>
+<section id="projects" class="bg-stone-950 text-white my-5 md:my-10 relative">
+    <h2 class="py-10 text-center">P R O J E C T S</h2>
     <div
         id="scroll-container"
-        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-start"
+        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-center"
     >
         <div class="project-card space-y-4">
             <h3 class="font-bold">Introduction to Software Engineering</h3>
-            <h4 class="font-bold text-gray-400">Final Project</h4>
+            <h4 class="font-bold text-gray-400">College Final Project</h4>
             <p>
                 A modular command-line application focused on numerology and
                 birthday analysis. Here is why I am proud of it:
@@ -48,9 +45,10 @@ import "../styles/projects.css";
                 >
             </p>
         </div>
+
         <div class="project-card space-y-4">
             <h3 class="font-bold">Data Structure and Algorithms</h3>
-            <h4 class="font-bold text-gray-400">Final Project</h4>
+            <h4 class="font-bold text-gray-400">College Final Project</h4>
             <p>
                 A command-line Bank Account Management System focused on self-
                 implemented data structures and their applications.
@@ -80,6 +78,88 @@ import "../styles/projects.css";
                     rel="noopener noreferrer"
                     >https://github.com/cyandizy/DSAFinal</a
                 >
+            </p>
+        </div>
+        <div class="project-card space-y-4">
+            <h3 class="font-bold">VisualLog</h3>
+            <h4 class="font-bold text-gray-400">
+                A GUI-based text logging app
+            </h4>
+            <p>
+                Built in C# using WPF. This project shows my application of
+                Object-Oriented Programming (OOP) and Model–view–viewmodel GUI
+                architecture. A string of characters can be input and saved,
+                alongside the current time into a json file with customizable
+                save path. The messages stored in said file will then be
+                displayed through GUI.
+            </p>
+
+            <p>
+                For more details, visit <a
+                    class="text-blue-400 font-semibold"
+                    href="https://github.com/cyandizy/VisualLog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >https://github.com/cyandizy/VisualLog</a
+                >
+            </p>
+        </div>
+        <div class="project-card space-y-4">
+            <h3 class="font-bold">Arino</h3>
+            <h4 class="font-bold text-gray-400">
+                An ingredient inventory management tool
+            </h4>
+            <p>
+                Built in Rust in a Unix-style command-line interface to
+                integrate with other CLI tools such as grep. The data is stored
+                in a local SQLite database and can be automatically synced to
+                Cloud storage using Dropbox API for portability. It allows
+                manual data updates and dish planning based on what ingredients
+                you currently have.
+            </p>
+
+            <p>
+                It is very advised to read more about this: <a
+                    class="text-blue-400 font-semibold"
+                    href="https://github.com/cyandizy/Arino"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >https://github.com/cyandizy/Arino</a
+                >
+            </p>
+        </div>
+        <div class="project-card space-y-4">
+            <h3 class="font-bold">Fedora KDE Plasma</h3>
+            <h4 class="font-bold text-gray-400">
+                As a daily driver for dev and productivity
+            </h4>
+            <p>
+                I familiarized myself with the environment of Linux by
+                dual-booting into Fedora (a distribution of Linux) and do other
+                projects every day.
+            </p>
+
+            <p>
+                Learn more about Fedora: <a
+                    class="text-blue-400 font-semibold"
+                    href="https://fedoraproject.org/"
+                    target="_blank"
+                    rel="noopener noreferrer">https://fedoraproject.org/</a
+                >
+            </p>
+        </div>
+        <div class="project-card space-y-4">
+            <h3 class="font-bold">Fedora Server</h3>
+            <h4 class="font-bold text-gray-400">
+                Turned old laptop into a home server
+            </h4>
+            <p>
+                I turned an old laptop into a headless server used for hosting
+                stuff, primarily a NextCloud server (Imagine Google Drive, but
+                hosted at home). I manage it solely via SSH after the
+                initialization and use Tailscale (a peer-to-peer VPN) for
+                network. I also keep SSH server secure by allowing only key-pair
+                authentication.
             </p>
         </div>
     </div>
