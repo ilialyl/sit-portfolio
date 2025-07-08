@@ -1,13 +1,14 @@
 ---
 import "../styles/global.css";
 import "../styles/projects.css";
+import { Carousel } from "webcoreui/astro";
 ---
 
 <section id="projects" class="bg-stone-950 text-white my-5 md:my-10 relative">
     <h2 class="py-10 text-center">P R O J E C T S</h2>
     <div
         id="scroll-container"
-        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-center"
+        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-start"
     >
         <div class="project-card space-y-4">
             <h3 class="font-bold">Introduction to Software Engineering</h3>
@@ -44,6 +45,11 @@ import "../styles/projects.css";
                     >https://github.com/cyandizy/ISENFinal</a
                 >
             </p>
+            <Carousel items={3}>
+                <li><img src="./projects/isen_1.png" /></li>
+                <li><img src="./projects/isen_2.png" /></li>
+                <li><img src="./projects/isen_3.png" /></li>
+            </Carousel>
         </div>
 
         <div class="project-card space-y-4">
@@ -79,7 +85,13 @@ import "../styles/projects.css";
                     >https://github.com/cyandizy/DSAFinal</a
                 >
             </p>
+            <Carousel items={3}>
+                <li><img src="./projects/dsa_1.png" /></li>
+                <li><img src="./projects/dsa_2.png" /></li>
+                <li><img src="./projects/dsa_3.png" /></li>
+            </Carousel>
         </div>
+
         <div class="project-card space-y-4">
             <h3 class="font-bold">VisualLog</h3>
             <h4 class="font-bold text-gray-400">
@@ -103,7 +115,13 @@ import "../styles/projects.css";
                     >https://github.com/cyandizy/VisualLog</a
                 >
             </p>
+            <Carousel items={3}>
+                <li><img src="./projects/visual_log_1.png" /></li>
+                <li><img src="./projects/visual_log_2.png" /></li>
+                <li><img src="./projects/visual_log_3.png" /></li>
+            </Carousel>
         </div>
+
         <div class="project-card space-y-4">
             <h3 class="font-bold">Arino</h3>
             <h4 class="font-bold text-gray-400">
@@ -127,7 +145,13 @@ import "../styles/projects.css";
                     >https://github.com/cyandizy/Arino</a
                 >
             </p>
+            <Carousel items={3}>
+                <li><img src="./projects/arino_2.png" /></li>
+                <li><img src="./projects/arino_3.png" /></li>
+                <li><img src="./projects/arino_1.png" /></li>
+            </Carousel>
         </div>
+
         <div class="project-card space-y-4">
             <h3 class="font-bold">Fedora KDE Plasma</h3>
             <h4 class="font-bold text-gray-400">
@@ -147,7 +171,11 @@ import "../styles/projects.css";
                     rel="noopener noreferrer">https://fedoraproject.org/</a
                 >
             </p>
+            <Carousel items={1}>
+                <li><img src="./projects/fedora.png" /></li>
+            </Carousel>
         </div>
+
         <div class="project-card space-y-4">
             <h3 class="font-bold">Fedora Server</h3>
             <h4 class="font-bold text-gray-400">
@@ -161,6 +189,12 @@ import "../styles/projects.css";
                 network. I also keep SSH server secure by allowing only key-pair
                 authentication.
             </p>
+            <Carousel items={4}>
+                <li><img src="./projects/fedora_server_1.png" /></li>
+                <li><img src="./projects/fedora_server_2.png" /></li>
+                <li><img src="./projects/fedora_server_3.png" /></li>
+                <li><img src="./projects/fedora_server_4.png" /></li>
+            </Carousel>
         </div>
     </div>
     <button
@@ -174,41 +208,47 @@ import "../styles/projects.css";
         >&gt;</button
     >
     <p class="text-center md:hidden">&lt;-- Scroll --&gt;</p>
-</section>
 
-<script>
-    // Get scrollable area
-    const container = document.getElementById("scroll-container");
-    // Get buttons
-    const next = document.getElementById("scroll-next");
-    const prev = document.getElementById("scroll-prev");
+    <script>
+        // Get scrollable area
+        const container = document.getElementById("scroll-container");
+        // Get buttons
+        const next = document.getElementById("scroll-next");
+        const prev = document.getElementById("scroll-prev");
 
-    // If container and buttons exist and are HTML elements
-    if (
-        container instanceof HTMLElement &&
-        next instanceof HTMLElement &&
-        prev instanceof HTMLElement
-    ) {
-        // Get a sample of project card
-        const card = container.querySelector(".project-card");
-        // If project card exists and is an HTML element
-        if (card instanceof HTMLElement) {
-            // Get CSS styles applied to project card
-            const cardStyle = getComputedStyle(card);
-            // Get card width
-            const cardWidth =
-                card.offsetWidth + parseInt(cardStyle.marginRight || "0");
+        // If container and buttons exist and are HTML elements
+        if (
+            container instanceof HTMLElement &&
+            next instanceof HTMLElement &&
+            prev instanceof HTMLElement
+        ) {
+            // Get a sample of project card
+            const card = container.querySelector(".project-card");
+            // If project card exists and is an HTML element
+            if (card instanceof HTMLElement) {
+                // Get CSS styles applied to project card
+                const cardStyle = getComputedStyle(card);
+                // Get card width
+                const cardWidth =
+                    card.offsetWidth + parseInt(cardStyle.marginRight || "0");
 
-            function scrollNext() {
-                container?.scrollBy({ left: cardWidth, behavior: "smooth" });
+                function scrollNext() {
+                    container?.scrollBy({
+                        left: cardWidth,
+                        behavior: "smooth",
+                    });
+                }
+
+                function scrollPrev() {
+                    container?.scrollBy({
+                        left: -cardWidth,
+                        behavior: "smooth",
+                    });
+                }
+
+                next.addEventListener("click", scrollNext);
+                prev.addEventListener("click", scrollPrev);
             }
-
-            function scrollPrev() {
-                container?.scrollBy({ left: -cardWidth, behavior: "smooth" });
-            }
-
-            next.addEventListener("click", scrollNext);
-            prev.addEventListener("click", scrollPrev);
         }
-    }
-</script>
+    </script>
+</section>
