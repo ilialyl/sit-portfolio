@@ -25,7 +25,7 @@ em {
 }
 
 img {
-    @apply object-scale-down;
+    @apply object-scale-down 2xl:w-4/5;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
