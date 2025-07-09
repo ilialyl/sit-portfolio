@@ -5,7 +5,7 @@ import { Carousel } from "webcoreui/astro";
 ---
 
 <section id="projects" class="bg-stone-950 text-white my-5 md:my-10 relative">
-    <div class="flex flex-row justify-center space-x-10">
+    <div class="flex flex-row justify-center md:space-x-10">
         <button
             id="scroll-prev"
             class="text-white font-bold text-4xl hidden md:block cursor-pointer"
@@ -23,7 +23,7 @@ import { Carousel } from "webcoreui/astro";
 
     <div
         id="scroll-container"
-        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-stretch"
+        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-start 2xl:items-stretch"
     >
         <div class="project-card">
             <div class="space-y-4 2xl:w-[140vw]">

@@ -5,6 +5,6 @@
 
 @layer components {
     .project-card {
-        @apply border-solid border-blue-500 border-3 flex flex-col 2xl:flex-row justify-evenly text-white rounded-2xl w-full p-5 md:w-[80vw] md:p-10  shrink-0 snap-center;
+        @apply border-solid border-blue-500 border-3 flex flex-col 2xl:flex-row justify-start gap-6 2xl:gap-0 2xl:justify-evenly text-white rounded-2xl w-full p-5 md:w-[80vw] md:p-10 shrink-0 snap-center;
     }
 }
