@@ -25,7 +25,9 @@ import { Carousel } from "webcoreui/astro";
         <div class="project-card">
             <div class="space-y-4 2xl:w-[140vw]">
                 <h3 class="font-bold">Introduction to Software Engineering</h3>
-                <h4 class="font-bold text-gray-400">College Final Project</h4>
+                <h4 class="font-bold text-gray-400">
+                    Curtin College Final Project
+                </h4>
                 <p>
                     A modular command-line application focused on numerology and
                     birthday analysis. Here is why I am proud of it:
@@ -54,8 +56,7 @@ import { Carousel } from "webcoreui/astro";
                         class="text-blue-400 font-semibold"
                         href="https://github.com/cyandizy/ISENFinal"
                         target="_blank"
-                        rel="noopener noreferrer"
-                        >https://github.com/cyandizy/ISENFinal</a
+                        rel="noopener noreferrer">ISENFinal</a
                     >
                 </p>
             </div>
@@ -71,7 +72,9 @@ import { Carousel } from "webcoreui/astro";
         <div class="project-card">
             <div class="space-y-4 2xl:w-[100vw]">
                 <h3 class="font-bold">Data Structure and Algorithms</h3>
-                <h4 class="font-bold text-gray-400">College Final Project</h4>
+                <h4 class="font-bold text-gray-400">
+                    Curtin College Final Project
+                </h4>
                 <p>
                     A command-line Bank Account Management System focused on
                     self- implemented data structures and their applications.
@@ -99,8 +102,7 @@ import { Carousel } from "webcoreui/astro";
                         class="text-blue-400 font-semibold"
                         href="https://github.com/cyandizy/DSAFinal"
                         target="_blank"
-                        rel="noopener noreferrer"
-                        >https://github.com/cyandizy/DSAFinal</a
+                        rel="noopener noreferrer">DSAFinal</a
                     >
                 </p>
             </div>
@@ -122,10 +124,11 @@ import { Carousel } from "webcoreui/astro";
                 <p>
                     Built in C# using WPF. This project shows my application of
                     Object-Oriented Programming (OOP) and Model–View–ViewModel
-                    GUI architecture (MVVM). A string of characters can be input
-                    and saved, alongside the current time into a json file with
-                    customizable save path. The messages stored in said file
-                    will then be displayed through GUI.
+                    GUI architecture (MVVM).
+                    <br /><br />
+                    A string of characters can be input and saved, alongside the
+                    current time into a json file with customizable save path. The
+                    messages stored in said file will then be displayed through GUI.
                 </p>
 
                 <p>
@@ -133,8 +136,7 @@ import { Carousel } from "webcoreui/astro";
                         class="text-blue-400 font-semibold"
                         href="https://github.com/cyandizy/VisualLog"
                         target="_blank"
-                        rel="noopener noreferrer"
-                        >https://github.com/cyandizy/VisualLog</a
+                        rel="noopener noreferrer">VisualLog</a
                     >
                 </p>
             </div>
@@ -154,20 +156,20 @@ import { Carousel } from "webcoreui/astro";
                 </h4>
                 <p>
                     Built in Rust in a Unix-style command-line interface to
-                    integrate with other CLI tools such as grep. The data is
-                    stored in a local SQLite database and can be automatically
-                    synced to Cloud storage using Dropbox API for portability.
-                    It allows manual data updates and dish planning based on
-                    what ingredients you currently have.
+                    integrate with other CLI tools such as grep.
+                    <br /><br />
+                    The data is stored in a local SQLite database and can be automatically
+                    synced to Cloud storage using Dropbox API for portability. It
+                    allows manual data updates and dish planning based on what ingredients
+                    you currently have.
                 </p>
 
                 <p>
-                    It is very advised to read more about this: <a
+                    It is very advised to learn more about <a
                         class="text-blue-400 font-semibold"
                         href="https://github.com/cyandizy/Arino"
                         target="_blank"
-                        rel="noopener noreferrer"
-                        >https://github.com/cyandizy/Arino</a
+                        rel="noopener noreferrer">Arino</a
                     >
                 </p>
             </div>
@@ -194,14 +196,33 @@ import { Carousel } from "webcoreui/astro";
                     other projects every day.
                 </p>
 
-                <p>
-                    Learn more about Fedora: <a
-                        class="text-blue-400 font-semibold"
-                        href="https://fedoraproject.org/"
-                        target="_blank"
-                        rel="noopener noreferrer">https://fedoraproject.org/</a
-                    >
-                </p>
+                <ul class="space-y-5">
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://fedoraproject.org/"
+                            target="_blank"
+                            rel="noopener noreferrer">Fedora Linux</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://www.geeksforgeeks.org/operating-systems/booting-and-dual-booting-of-operating-system/"
+                            target="_blank"
+                            rel="noopener noreferrer">Dual-Booting</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://kde.org/plasma-desktop/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >KDE Plasma Desktop Environment</a
+                        >
+                    </li>
+                </ul>
             </div>
             <div>
                 <Carousel items={1}>
@@ -219,11 +240,46 @@ import { Carousel } from "webcoreui/astro";
                 <p>
                     I turned an old laptop into a headless server used for
                     hosting stuff, primarily a NextCloud server (Imagine Google
-                    Drive, but hosted at home). I manage it solely via SSH after
-                    the initialization and use Tailscale (a peer-to-peer VPN)
-                    for network. I also keep SSH server secure by allowing only
-                    key-pair authentication.
+                    Drive, but hosted at home).
+                    <br /><br />
+                    I manage it solely via SSH after the initialization and use Tailscale
+                    (a peer-to-peer VPN) for network. I also keep SSH server secure
+                    by allowing only key-pair authentication.
                 </p>
+                <ul class="space-y-5">
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://nextcloud.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">NextCloud</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://tailscale.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">Tailscale</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://en.wikipedia.org/wiki/Secure_Shell"
+                            target="_blank"
+                            rel="noopener noreferrer">SSH</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="text-blue-400 font-semibold"
+                            href="https://en.wikipedia.org/wiki/Secure_Shell"
+                            target="_blank"
+                            rel="noopener noreferrer">Key-Pair Authentication</a
+                        >
+                    </li>
+                </ul>
             </div>
             <div>
                 <Carousel items={4}>
