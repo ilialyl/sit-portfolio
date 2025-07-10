@@ -4,7 +4,7 @@ import "../styles/swiper.css";
 import { Carousel } from "webcoreui/astro";
 ---
 
-<section id="projects" class="bg-stone-950 text-white mt-5 md:mt-10 relative">
+<section id="projects" class="bg-stone-900 text-white mt-5 md:mt-10 relative">
     <div class="flex flex-row justify-center md:space-x-10">
         <button
             id="prev-project"
@@ -21,7 +21,7 @@ import { Carousel } from "webcoreui/astro";
         >
     </div>
 
-    <div id="project-container" class="card-container no-scrollbar">
+    <div id="project-container" class="card-container">
         <div class="project-card">
             <div class="space-y-4 2xl:w-[140vw]">
                 <h3 class="font-bold">Introduction to Software Engineering</h3>
@@ -235,8 +235,6 @@ import { Carousel } from "webcoreui/astro";
             </div>
         </div>
     </div>
-
-    <p class="text-center md:hidden">&lt;-- Swipe --&gt;</p>
 </section>
 
 <script>
