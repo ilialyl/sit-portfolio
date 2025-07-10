@@ -4,7 +4,7 @@ import "../styles/projects.css";
 import { Carousel } from "webcoreui/astro";
 ---
 
-<section id="projects" class="bg-stone-950 text-white my-5 md:my-10 relative">
+<section id="projects" class="bg-stone-950 text-white mt-5 md:mt-10 relative">
     <div class="flex flex-row justify-center md:space-x-10">
         <button
             id="scroll-prev"
@@ -240,47 +240,16 @@ import { Carousel } from "webcoreui/astro";
     </div>
 
     <p class="text-center md:hidden">&lt;-- Swipe --&gt;</p>
-
-    <script>
-        // Get scrollable area
-        const container = document.getElementById("scroll-container");
-        // Get buttons
-        const next = document.getElementById("scroll-next");
-        const prev = document.getElementById("scroll-prev");
-
-        // If container and buttons exist and are HTML elements
-        if (
-            container instanceof HTMLElement &&
-            next instanceof HTMLElement &&
-            prev instanceof HTMLElement
-        ) {
-            // Get a sample of project card
-            const card = container.querySelector(".project-card");
-            // If project card exists and is an HTML element
-            if (card instanceof HTMLElement) {
-                // Get CSS styles applied to project card
-                const cardStyle = getComputedStyle(card);
-                // Get card width
-                const cardWidth =
-                    card.offsetWidth + parseInt(cardStyle.marginRight || "0");
-
-                function scrollNext() {
-                    container?.scrollBy({
-                        left: cardWidth,
-                        behavior: "smooth",
-                    });
-                }
-
-                function scrollPrev() {
-                    container?.scrollBy({
-                        left: -cardWidth,
-                        behavior: "smooth",
-                    });
-                }
-
-                next.addEventListener("click", scrollNext);
-                prev.addEventListener("click", scrollPrev);
-            }
-        }
-    </script>
 </section>
+
+<script>
+    import { swiper } from "../../public/scripts/swiper.js";
+
+    // Get scrollable area
+    const container = document.getElementById("scroll-container");
+    // Get buttons
+    const next = document.getElementById("scroll-next");
+    const prev = document.getElementById("scroll-prev");
+
+    swiper(container, next, prev, ".project-card");
+</script>
