@@ -7,4 +7,12 @@
     .project-card {
         @apply border-solid border-blue-500 border-3 flex flex-col 2xl:flex-row justify-start gap-6 2xl:gap-0 2xl:justify-evenly text-white rounded-2xl w-full p-5 md:w-[80vw] md:p-10 shrink-0 snap-center;
     }
+
+    .cert-card {
+        @apply border-solid border-blue-500 border-3 flex flex-col 2xl:flex-row justify-start gap-6 2xl:gap-0 2xl:justify-evenly text-white rounded-2xl w-full p-5 md:w-[80vw] md:p-10 shrink-0 snap-center;
+    }
+
+    .card-container {
+        @apply overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw]  items-start 2xl:items-stretch;
+    }
 }

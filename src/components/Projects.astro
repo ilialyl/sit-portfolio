@@ -1,13 +1,13 @@
 ---
 import "../styles/global.css";
-import "../styles/projects.css";
+import "../styles/swiper.css";
 import { Carousel } from "webcoreui/astro";
 ---
 
 <section id="projects" class="bg-stone-950 text-white mt-5 md:mt-10 relative">
     <div class="flex flex-row justify-center md:space-x-10">
         <button
-            id="scroll-prev"
+            id="prev-project"
             class="text-white font-bold text-4xl hidden md:block cursor-pointer"
             >&lt;</button
         >
@@ -15,16 +15,13 @@ import { Carousel } from "webcoreui/astro";
         <h2 class="py-10 text-center">P R O J E C T S</h2>
 
         <button
-            id="scroll-next"
+            id="next-project"
             class="text-white font-bold text-4xl hidden md:block cursor-pointer"
             >&gt;</button
         >
     </div>
 
-    <div
-        id="scroll-container"
-        class="overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw] no-scrollbar items-start 2xl:items-stretch"
-    >
+    <div id="project-container" class="card-container no-scrollbar">
         <div class="project-card">
             <div class="space-y-4 2xl:w-[140vw]">
                 <h3 class="font-bold">Introduction to Software Engineering</h3>
@@ -246,10 +243,10 @@ import { Carousel } from "webcoreui/astro";
     import { swiper } from "../../public/scripts/swiper.js";
 
     // Get scrollable area
-    const container = document.getElementById("scroll-container");
+    const container = document.getElementById("project-container");
     // Get buttons
-    const next = document.getElementById("scroll-next");
-    const prev = document.getElementById("scroll-prev");
+    const next = document.getElementById("next-project");
+    const prev = document.getElementById("prev-project");
 
     swiper(container, next, prev, ".project-card");
 </script>
