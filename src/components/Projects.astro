@@ -22,54 +22,43 @@ import { Carousel } from "webcoreui/astro";
     </div>
 
     <div id="project-container" class="card-container">
-        <div class="project-card">
-            <div class="space-y-4 2xl:w-[140vw]">
-                <h3 class="font-bold">Introduction to Software Engineering</h3>
+        <div id="arino" class="project-card">
+            <div class="space-y-4 2xl:w-[120vw]">
+                <h3 class="font-bold">Arino</h3>
                 <h4 class="font-bold text-gray-400">
-                    Curtin College Final Project
+                    An ingredient inventory management tool
                 </h4>
                 <p>
-                    A modular command-line application focused on numerology and
-                    birthday analysis. Here is why I am proud of it:
+                    Built in Rust in a Unix-style command-line interface to
+                    integrate with other CLI tools such as grep.
+                    <br /><br />
+                    The data is stored in a local SQLite database and can be automatically
+                    synced to Cloud storage using Dropbox API for portability. It
+                    allows manual data updates and dish planning based on what ingredients
+                    you currently have.
                 </p>
-                <ul class="list-disc list-inside pl-4 space-y-2">
-                    <li>
-                        The modules and submodules are designed with clear
-                        responsibilities.
-                    </li>
-                    <li>
-                        I applied test-driven development, by defining black-box
-                        and white-box test cases.
-                    </li>
-                    <li>
-                        I managed the project using a version control, taking
-                        advantage of branching, merging, and perform commits
-                        frequently to track progress.
-                    </li>
-                    <li>
-                        The documentation is the most comprehensive I have ever
-                        done.
-                    </li>
-                </ul>
+
                 <p>
-                    For more details, visit <a
+                    It is very advised to learn more about <a
                         class="text-blue-400 font-semibold"
-                        href="https://github.com/cyandizy/ISENFinal"
+                        href="https://github.com/cyandizy/Arino"
                         target="_blank"
-                        rel="noopener noreferrer">ISENFinal</a
+                        rel="noopener noreferrer">Arino</a
                     >
                 </p>
             </div>
             <div>
                 <Carousel items={3}>
-                    <li><img src="./projects/isen_1.png" /></li>
-                    <li><img src="./projects/isen_2.png" /></li>
-                    <li><img src="./projects/isen_3.png" /></li>
+                    <li><img src="./projects/arino_2.png" /></li>
+                    <li><img src="./projects/arino_3.png" /></li>
+                    <li>
+                        <img src="./projects/arino_1.png" />
+                    </li>
                 </Carousel>
             </div>
         </div>
 
-        <div class="project-card">
+        <div id="dsa" class="project-card">
             <div class="space-y-4 2xl:w-[100vw]">
                 <h3 class="font-bold">Data Structure and Algorithms</h3>
                 <h4 class="font-bold text-gray-400">
@@ -115,7 +104,7 @@ import { Carousel } from "webcoreui/astro";
             </div>
         </div>
 
-        <div class="project-card">
+        <div id="visuallog" class="project-card">
             <div class="space-y-4 2xl:w-[80vw]">
                 <h3 class="font-bold">VisualLog</h3>
                 <h4 class="font-bold text-gray-400">
@@ -148,43 +137,7 @@ import { Carousel } from "webcoreui/astro";
             </div>
         </div>
 
-        <div class="project-card">
-            <div class="space-y-4 2xl:w-[120vw]">
-                <h3 class="font-bold">Arino</h3>
-                <h4 class="font-bold text-gray-400">
-                    An ingredient inventory management tool
-                </h4>
-                <p>
-                    Built in Rust in a Unix-style command-line interface to
-                    integrate with other CLI tools such as grep.
-                    <br /><br />
-                    The data is stored in a local SQLite database and can be automatically
-                    synced to Cloud storage using Dropbox API for portability. It
-                    allows manual data updates and dish planning based on what ingredients
-                    you currently have.
-                </p>
-
-                <p>
-                    It is very advised to learn more about <a
-                        class="text-blue-400 font-semibold"
-                        href="https://github.com/cyandizy/Arino"
-                        target="_blank"
-                        rel="noopener noreferrer">Arino</a
-                    >
-                </p>
-            </div>
-            <div>
-                <Carousel items={3}>
-                    <li><img src="./projects/arino_2.png" /></li>
-                    <li><img src="./projects/arino_3.png" /></li>
-                    <li>
-                        <img src="./projects/arino_1.png" />
-                    </li>
-                </Carousel>
-            </div>
-        </div>
-
-        <div class="project-card">
+        <div id="fedora" class="project-card">
             <div class="space-y-4 2xl:w-[50vw]">
                 <h3 class="font-bold">Fedora KDE Plasma</h3>
                 <h4 class="font-bold text-gray-400">
@@ -231,7 +184,54 @@ import { Carousel } from "webcoreui/astro";
             </div>
         </div>
 
-        <div class="project-card">
+        <div id="isen" class="project-card">
+            <div class="space-y-4 2xl:w-[140vw]">
+                <h3 class="font-bold">Introduction to Software Engineering</h3>
+                <h4 class="font-bold text-gray-400">
+                    Curtin College Final Project
+                </h4>
+                <p>
+                    A modular command-line application focused on numerology and
+                    birthday analysis. Here is why I am proud of it:
+                </p>
+                <ul class="list-disc list-inside pl-4 space-y-2">
+                    <li>
+                        The modules and submodules are designed with clear
+                        responsibilities.
+                    </li>
+                    <li>
+                        I applied test-driven development, by defining black-box
+                        and white-box test cases.
+                    </li>
+                    <li>
+                        I managed the project using a version control, taking
+                        advantage of branching, merging, and perform commits
+                        frequently to track progress.
+                    </li>
+                    <li>
+                        The documentation is the most comprehensive I have ever
+                        done.
+                    </li>
+                </ul>
+                <p>
+                    For more details, visit <a
+                        class="text-blue-400 font-semibold"
+                        href="https://github.com/cyandizy/ISENFinal"
+                        target="_blank"
+                        rel="noopener noreferrer">ISENFinal</a
+                    >
+                </p>
+            </div>
+            <div>
+                <Carousel items={3}>
+                    <li><img src="./projects/isen_1.png" /></li>
+                    <li><img src="./projects/isen_2.png" /></li>
+                    <li><img src="./projects/isen_3.png" /></li>
+                </Carousel>
+            </div>
+        </div>
+
+        <div id="fedora-server" class="project-card">
             <div class="space-y-4 2xl:w-[280vw]">
                 <h3 class="font-bold">Fedora Server</h3>
                 <h4 class="font-bold text-gray-400">
