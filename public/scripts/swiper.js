@@ -11,8 +11,23 @@ export function swiper(container, next, prev, card_id) {
       // Get CSS styles applied to project card
       const cardStyle = getComputedStyle(card);
       // Get card width
-      const cardWidth =
-        card.offsetWidth + parseInt(cardStyle.marginRight || "0");
+      let cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight || "0");
+
+      function updateButtons() {
+        if (container.scrollLeft <= 30 + cardWidth) {
+          prev.classList.add("invisible");
+        } else {
+          prev.classList.remove("invisible");
+        }
+        if (
+          container.scrollLeft + container.clientWidth >=
+          container.scrollWidth - (100 + cardWidth)
+        ) {
+          next.classList.add("invisible");
+        } else {
+          next.classList.remove("invisible");
+        }
+      }
 
       function scrollNext() {
         container?.scrollBy({
@@ -30,6 +45,12 @@ export function swiper(container, next, prev, card_id) {
 
       next.addEventListener("click", scrollNext);
       prev.addEventListener("click", scrollPrev);
+      updateButtons();
+      container.addEventListener("scroll", updateButtons);
+
+      window.addEventListener("resize", () => {
+        cardWidth = card.offsetWidth + parseInt(cardStyle.marginRight || "0");
+      });
     }
   }
 }
