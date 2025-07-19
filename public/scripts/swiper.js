@@ -15,17 +15,21 @@ export function swiper(container, next, prev, card_id) {
 
       function updateButtons() {
         if (container.scrollLeft <= 30 + cardWidth) {
-          prev.classList.add("invisible");
+          prev.classList.remove("!opacity-100");
+          prev.classList.add("!opacity-0");
         } else {
-          prev.classList.remove("invisible");
+          prev.classList.remove("!opacity-0");
+          prev.classList.add("!opacity-100");
         }
         if (
           container.scrollLeft + container.clientWidth >=
           container.scrollWidth - (100 + cardWidth)
         ) {
-          next.classList.add("invisible");
+          next.classList.remove("!opacity-100");
+          next.classList.add("!opacity-0");
         } else {
-          next.classList.remove("invisible");
+          next.classList.remove("!opacity-0");
+          next.classList.add("!opacity-100");
         }
       }
 
