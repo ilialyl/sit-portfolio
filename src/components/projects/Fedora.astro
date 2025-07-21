@@ -1,0 +1,52 @@
+---
+import { Carousel } from "webcoreui/astro";
+---
+
+<div id="fedora" class="project-card">
+    <div class="space-y-4 2xl:w-[50vw]">
+        <h3 class="font-bold">Fedora KDE Plasma</h3>
+        <h4 class="font-bold text-gray-400">
+            As a daily driver for development and productivity
+        </h4>
+        <ul class="font-bold text-blue-400 list-disc list-inside">
+            <li>Adoption Date: 2025-02-27</li>
+        </ul>
+        <p>
+            I familiarized myself with the environment of Linux by dual-booting
+            into Fedora (a distribution of Linux) and do other projects every
+            day.
+        </p>
+
+        <ul class="space-y-5">
+            <li>
+                <a
+                    class="text-blue-400 font-semibold"
+                    href="https://fedoraproject.org/"
+                    target="_blank"
+                    rel="noopener noreferrer">Fedora Linux</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-blue-400 font-semibold"
+                    href="https://www.geeksforgeeks.org/operating-systems/booting-and-dual-booting-of-operating-system/"
+                    target="_blank"
+                    rel="noopener noreferrer">Dual-Booting</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-blue-400 font-semibold"
+                    href="https://kde.org/plasma-desktop/"
+                    target="_blank"
+                    rel="noopener noreferrer">KDE Plasma Desktop Environment</a
+                >
+            </li>
+        </ul>
+    </div>
+    <div>
+        <Carousel items={1}>
+            <li><img src="./projects/fedora.png" /></li>
+        </Carousel>
+    </div>
+</div>

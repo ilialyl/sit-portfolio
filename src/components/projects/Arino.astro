@@ -1,0 +1,43 @@
+---
+import { Carousel } from "webcoreui/astro";
+---
+
+<div id="arino" class="project-card">
+    <div class="space-y-4 2xl:w-[120vw]">
+        <h3 class="font-bold">Arino</h3>
+        <h4 class="font-bold text-gray-400">
+            An ingredient inventory management tool
+        </h4>
+        <ul class="font-bold text-blue-400 list-disc list-inside">
+            <li>First Commit: 2024-08-31</li>
+            <li>Most Recent Commit: 2025-06-14</li>
+        </ul>
+        <p>
+            Built in Rust in a Unix-style command-line interface to integrate
+            with other CLI tools such as grep and shell pipelines.
+            <br /><br />
+            The data is stored in a local SQLite database and can be automatically
+            synced to Cloud storage using Dropbox API for portability. It allows
+            manual data updates and dish planning based on what ingredients you currently
+            have.
+        </p>
+
+        <p>
+            More info available at the <a
+                class="text-blue-400 font-semibold"
+                href="https://github.com/cyandizy/Arino"
+                target="_blank"
+                rel="noopener noreferrer">project repo</a
+            >
+        </p>
+    </div>
+    <div>
+        <Carousel items={3}>
+            <li><img src="./projects/arino_2.png" /></li>
+            <li><img src="./projects/arino_3.png" /></li>
+            <li>
+                <img src="./projects/arino_1.png" />
+            </li>
+        </Carousel>
+    </div>
+</div>

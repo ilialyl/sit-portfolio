@@ -1,0 +1,53 @@
+---
+import { Carousel } from "webcoreui/astro";
+---
+
+<div id="isen" class="project-card">
+    <div class="space-y-4 2xl:w-[140vw]">
+        <h3 class="font-bold">Introduction to Software Engineering</h3>
+        <h4 class="font-bold text-gray-400">
+            Curtin College's Final Coursework
+        </h4>
+        <ul class="font-bold text-blue-400 list-disc list-inside">
+            <li>First Commit: 2024-04-26</li>
+            <li>Final Functional Commit: 2024-05-09</li>
+        </ul>
+        <p>
+            A modular command-line application related to numerology and
+            birthday analysis. While the functionality is intentionally limited,
+            the focus of this coursework was about applying software engineering
+            principles.
+        </p>
+        <ul class="list-disc list-inside pl-4 space-y-2">
+            <li>
+                The modules and submodules are designed with clear
+                responsibilities.
+            </li>
+            <li>
+                Followed test-driven development, by defining black-box and
+                white-box test cases.
+            </li>
+            <li>
+                The extensive use of version control, taking advantage of
+                branching, merging, and perform commits frequently to track
+                progress.
+            </li>
+            <li>Wrote comprehensive documentation</li>
+        </ul>
+        <p>
+            For more details, visit <a
+                class="text-blue-400 font-semibold"
+                href="https://github.com/cyandizy/ISENFinal"
+                target="_blank"
+                rel="noopener noreferrer">ISENFinal</a
+            >
+        </p>
+    </div>
+    <div>
+        <Carousel items={3}>
+            <li><img src="./projects/isen_1.png" /></li>
+            <li><img src="./projects/isen_2.png" /></li>
+            <li><img src="./projects/isen_3.png" /></li>
+        </Carousel>
+    </div>
+</div>
