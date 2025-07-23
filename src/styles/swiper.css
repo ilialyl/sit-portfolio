@@ -5,7 +5,7 @@
 
 @layer components {
     .project-card {
-        @apply border-solid border-blue-500 bg-stone-950 border-3 flex flex-col 2xl:flex-row justify-start gap-6 2xl:gap-0 2xl:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
+        @apply border-solid border-blue-500 bg-stone-950 border-3 flex flex-col lg:flex-row justify-start gap-6 lg:gap-0 lg:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
     }
 
     .cert-card {
@@ -13,6 +13,6 @@
     }
 
     .card-container {
-        @apply overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:px-[10vw]  items-start 2xl:items-stretch;
+        @apply overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:px-[10vw]  items-start lg:items-stretch;
     }
 }
