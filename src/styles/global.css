@@ -6,6 +6,14 @@
 
 @custom-variant portrait ( @media (orientation: portrait) );
 
+@custom-variant 2xs ( @media (min-width: 300px) );
+@custom-variant xs  ( @media (max-width: 575px) ); // Mobile (iPhone 3 - iPhone XS Max).
+@custom-variant sm  ( @media (min-width: 576px) and (max-width: 897px) ); // Mobile (matches max: iPhone 11 Pro Max landscape @ 896px).
+@custom-variant md  ( @media (min-width: 898px) and (max-width: 1199px) ); // Tablet (matches max: iPad Pro @ 1112px).
+@custom-variant lg  ( @media (min-width: 1200px) ); // Desktop smallest.
+@custom-variant xl  ( @media (min-width: 1259px) ); // Desktop wide.
+@custom-variant 2xl ( @media (min-width: 1359px) ); // Desktop widescreen.
+
 img {
     @apply object-scale-down 2xl:w-4/5;
 }
