@@ -9,7 +9,7 @@
     }
 
     .cert-card {
-        @apply border-solid border-white bg-stone-950 border-3 flex flex-col 2xl:flex-row justify-start gap-6 2xl:gap-0 2xl:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
+        @apply border-solid border-white bg-stone-950 border-3 flex flex-col lg:flex-row justify-start gap-6 lg:gap-0 lg:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
     }
 
     .card-container {
