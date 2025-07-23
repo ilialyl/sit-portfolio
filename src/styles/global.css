@@ -4,6 +4,8 @@
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
 
+@custom-variant portrait ( @media (orientation: portrait) );
+
 h1 {
     @apply text-4xl font-bold;
 }
