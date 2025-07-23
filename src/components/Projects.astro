@@ -14,9 +14,11 @@ import SwipeText from "./SwipeText.astro";
 
 <section
     id="projects"
-    class="text-white mt-5 md:mt-10 relative md:h-[110vh] lg:h-screen md:snap-start"
+    class="text-white mt-5 md:mt-10 relative md:h-[110vh] lg:h-screen md:snap-start portrait:h-max"
 >
-    <div class="flex flex-row justify-center md:space-x-10 items-center">
+    <div
+        class="flex flex-row justify-center md:space-x-10 items-center mb-[2vh]"
+    >
         <button
             id="prev-project"
             class="text-white font-bold text-4xl hidden md:block cursor-pointer bg-black my-10 transition-opacity duration-75 !opacity-100"
