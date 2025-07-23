@@ -13,6 +13,6 @@
     }
 
     .card-container {
-        @apply overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:pb-10 md:px-[10vw]  items-start 2xl:items-stretch;
+        @apply overflow-x-auto flex flex-row snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] pb-5 md:px-[10vw]  items-start 2xl:items-stretch;
     }
 }
