@@ -6,26 +6,6 @@
 
 @custom-variant portrait ( @media (orientation: portrait) );
 
-h1 {
-    @apply text-4xl font-bold;
-}
-
-h2 {
-    @apply text-3xl font-semibold;
-}
-
-h3 {
-    @apply text-2xl;
-}
-
-h4 {
-    @apply text-xl;
-}
-
-em {
-    @apply font-bold;
-}
-
 img {
     @apply object-scale-down 2xl:w-4/5;
 }
