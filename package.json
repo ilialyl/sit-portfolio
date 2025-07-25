@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "astro": "^5.10.1",
     "astro-icon": "^1.1.5",
+    "astro-typewriter": "^1.1.0",
     "tailwindcss": "^4.1.10",
     "webcoreui": "^1.0.0"
   },
