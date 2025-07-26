@@ -40,6 +40,7 @@ import Typewriter from "astro-typewriter";
     <div>
         <div
             class="mt-4 ml-2 mr-1 md:m-0 md:text-base/10"
+            id="en-preface"
             data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-mirror="true"
@@ -71,5 +72,23 @@ import Typewriter from "astro-typewriter";
             </p>
             <footer class="mt-10 md:hidden">- <cite>唯イズミ</cite></footer>
         </div>
+        <div
+            class="mt-4 ml-2 mr-1 md:m-0 md:text-base/10 hidden"
+            id="jp-preface"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-mirror="true"
+        >
+            <p class="text-4xl md:inline font-bold hidden">「日本語の内容</p>
+            <p class="inline md:hidden">日本語の内容</p>
+            <p>まだ書いていません。日本語はまだ上手ではありませんので。」</p>
+            <footer class="mt-10 md:hidden">- <cite>唯イズミ</cite></footer>
+        </div>
     </div>
 </section>
+
+<script>
+    import { toggleLanguage } from "../../public/scripts/preface.js";
+
+    toggleLanguage("toggle-language", "jp-preface", "en-preface");
+</script>
