@@ -45,24 +45,11 @@ import Certificates from "../components/Certificates.astro";
 <script>
     import AOS from "aos";
     import "aos/dist/aos.css";
+    import { toggleSnap } from "../../public/scripts/index.js";
+
+    toggleSnap("toggle-snap", "page");
 
     AOS.init({
         disable: "mobile",
     });
-
-    const btn = document.getElementById("toggle-snap");
-    const page = document.getElementById("page");
-    let snapEnabled = true;
-
-    if (btn instanceof HTMLElement && page instanceof HTMLElement)
-        btn.addEventListener("click", () => {
-            if (snapEnabled) {
-                page.classList.remove("snap-y", "snap-mandatory");
-                btn.textContent = "Snap Disabled";
-            } else {
-                page.classList.add("snap-y", "snap-mandatory");
-                btn.textContent = "Snap Enabled";
-            }
-            snapEnabled = !snapEnabled;
-        });
 </script>
