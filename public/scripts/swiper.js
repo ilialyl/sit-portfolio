@@ -1,11 +1,11 @@
-export function swiper(container, next, prev, card_id) {
+export function swiper(container, next, prev, cardId) {
   if (
     container instanceof HTMLElement &&
     next instanceof HTMLElement &&
     prev instanceof HTMLElement
   ) {
     // Get a sample of project card
-    const card = container.querySelector(card_id);
+    const card = container.querySelector(cardId);
     // If project card exists and is an HTML element
     if (card instanceof HTMLElement) {
       // Get CSS styles applied to project card
