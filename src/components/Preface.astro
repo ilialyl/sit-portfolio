@@ -3,23 +3,20 @@ import "../styles/global.css";
 import Typewriter from "astro-typewriter";
 ---
 
-<section
+<div
     id="preface"
     class="p-7 md:mx-auto md:py-0 lg:p-10 md:h-screen md:snap-center md:flex md:flex-col md:justify-center md:gap-[7vh] lg:gap-10 xl:p-30 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-between lg:items-center md:portrait:flex md:portrait:flex-col md:portrait:justify-center md:portrait:gap-[5vh] lg:portrait:gap-[10vh] md:portrait:items-start md:portrait:p-20"
 >
     <div
         id="toggle-language"
-        class="absolute top-1 right-13 md:top-5 md:right-17 prevent-select cursor-pointer bg-black text-white p-0.5"
+        class="absolute top-1 right-13 md:top-5 md:right-17 prevent-select cursor-pointer bg-black text-white p-0.5 font-bold"
     >
-        EN/JP
+        日本語
     </div>
     <div class="flex flex-none items-center justify-start md:hidden">
-        <h2
-            class="mb-3 text-center prevent-select"
-            data-aos="fade-down"
-            data-aos-duration="3000"
-        >
-            INTRODUCTION
+        <h2 class="en-preface mb-3 text-center prevent-select">INTRODUCTION</h2>
+        <h2 class="jp-preface hidden mb-3 text-center prevent-select">
+            改まる
         </h2>
     </div>
     <div
@@ -33,14 +30,16 @@ import Typewriter from "astro-typewriter";
             waitWritten={5000}
             waitDeleted={0}
         />
-        <p class="hidden md:block md:text-3xl lg:text-4xl">
+        <p class="en-preface md:text-3xl lg:text-4xl">
             An Aspiring CS student with strong foundation.
+        </p>
+        <p class="jp-preface hidden md:text-3xl lg:text-4xl">
+            基礎を持つ、CSを目指す学生
         </p>
     </div>
     <div>
         <div
-            class="mt-4 ml-2 mr-1 md:m-0 md:text-base/6 xl:text-base/8 2xl:text-base/10 md:portrait:text-base/10 lg:portrait:text-base/12"
-            id="en-preface"
+            class="en-preface mt-4 ml-2 mr-1 md:m-0 md:text-base/6 xl:text-base/8 2xl:text-base/10 md:portrait:text-base/10 lg:portrait:text-base/12"
             data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-mirror="true"
@@ -73,8 +72,7 @@ import Typewriter from "astro-typewriter";
             <footer class="mt-10 md:hidden">- <cite>唯イズミ</cite></footer>
         </div>
         <div
-            class="mt-4 ml-2 mr-1 md:m-0 md:text-base/10 hidden"
-            id="jp-preface"
+            class="jp-preface mt-4 ml-2 mr-1 md:m-0 md:text-base/10 hidden"
             data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-mirror="true"
@@ -85,7 +83,7 @@ import Typewriter from "astro-typewriter";
             <footer class="mt-10 md:hidden">- <cite>唯イズミ</cite></footer>
         </div>
     </div>
-</section>
+</div>
 
 <script>
     import { toggleLanguage } from "../../public/scripts/preface.js";
