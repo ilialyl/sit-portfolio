@@ -2,43 +2,77 @@
 import "../styles/global.css";
 import "../styles/swiper.css";
 import SwipeText from "./SwipeText.astro";
+
+import THM from "./certs/THM.astro";
 ---
 
 <section
     id="certs"
-    class="bg-stone-900 pb-5 text-white md:snap-center md:h-screen"
+    class="bg-stone-900 pb-5 text-white md:snap-center md:h-[70vh]"
 >
     <div>
-        <div class="flex flex-row justify-center md:space-x-10 items-center">
-            <button
+        <div
+            class="flex flex-row justify-center md:space-x-10 items-center md:pb-15 md:pt-10"
+        >
+            <!-- <button
                 id="prev-cert"
                 class="font-bold text-4xl hidden md:block cursor-pointer bg-white text-black"
                 data-aos="zoom-out"
                 data-aos-duration="2000">&lt;</button
-            >
+            > -->
 
             <h2 class="py-10 text-center prevent-select">
                 C E R T I F I C A T E S
             </h2>
 
-            <button
+            <!-- <button
                 id="next-cert"
                 class="font-bold text-4xl hidden md:block cursor-pointer bg-white text-black"
                 data-aos="zoom-out"
                 data-aos-duration="2000">&gt;</button
-            >
+            > -->
         </div>
         <div
             id="cert-container"
-            class="card-container"
+            class="card-container md:gap-10 md:justify-center md:items-center"
             data-aos="fade-right"
             data-aos-duration="2000"
             data-aos-once="true"
         >
-            <div class="cert-card h-[80vh]"></div>
-            <div class="cert-card"></div>
-            <div class="cert-card"></div>
+            <THM />
+            <THM />
         </div>
+
+        <!-- <div
+            class="flex flex-row justify-center gap-10 overflow-x-auto md:overflow-hidden"
+        >
+            <div class="card-container flex flex-col w-80 gap-7">
+                <div
+                    class="h-45 bg-white overflow-hidden flex justify-center items-center"
+                >
+                    <a
+                        href="certs/thm.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="object-cover transition-all duration-300 ease-in-out lg:hover:scale-110 cursor-pointer"
+                            src="./certs/thm.png"
+                        /></a
+                    >
+                </div>
+                <div>
+                    <h3 class="font-semibold">Pre-Security</h3><br />
+                    <p class="text-base/8">
+                        The acknowledgement of my completion of Pre-Security
+                        learning path on a Cybersecurity learning platform
+                        “TryHackMe”
+                    </p>
+                </div>
+            </div>
+            <div class="h-45 w-80 bg-white"></div>
+            <div class="h-45 w-80 bg-white"></div>
+        </div> -->
     </div>
     <SwipeText />
 </section>
