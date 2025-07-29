@@ -5,7 +5,7 @@
 
 @layer components {
     .project-card {
-        @apply border-solid border-blue-500 bg-stone-950 border-3 flex flex-col lg:flex-row justify-start gap-6 lg:gap-0 lg:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
+        @apply border-solid border-blue-500 bg-stone-950 border-3 flex flex-col lg:flex-row justify-start gap-6 lg:gap-0 lg:gap-x-5 lg:justify-evenly text-white rounded-2xl w-full p-5 md:w-[90vw] md:p-10 shrink-0 snap-center;
     }
 
     .cert-card {
