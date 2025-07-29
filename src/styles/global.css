@@ -5,6 +5,7 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @custom-variant portrait ( @media (orientation: portrait) );
+@custom-variant landscape ( @media (orientation: landscape) );
 
 @custom-variant 2xs ( @media (min-width: 300px) );
 @custom-variant xs  ( @media (max-width: 575px) ); // Mobile (iPhone 3 - iPhone XS Max).
