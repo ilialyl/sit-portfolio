@@ -15,23 +15,25 @@ import SwipeText from "./SwipeText.astro";
 
 <section
     id="projects"
-    class="text-white md:mt-10 relative md:h-[110vh] lg:h-screen md:snap-start portrait:h-max flex flex-col"
+    class="text-white mt-10 relative lg:h-screen md:snap-start md:portrait:h-screen flex flex-col"
 >
     <button
         id="prev-project"
-        class="top-1/2 left-7 z-10 absolute text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
+        class="top-1/2 left-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
         data-aos="zoom-out"
         data-aos-duration="2000"
         >&lt;
     </button>
     <button
         id="next-project"
-        class="top-1/2 right-7 z-10 absolute text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
+        class="top-1/2 right-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
         data-aos="zoom-out"
         data-aos-duration="2000"
         >&gt;
     </button>
-    <div class="flex flex-none items-center justify-center lg:h-2/12">
+    <div
+        class="flex flex-none items-center justify-center h-2/12 md:h-1/12 xl:h-2/12"
+    >
         <h2 class="text-black text-center prevent-select">P R O J E C T S</h2>
     </div>
 
