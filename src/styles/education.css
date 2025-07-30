@@ -5,10 +5,18 @@
 
 @layer components {
     .school-card {
-        @apply flex flex-row items-center justify-between bg-black p-5 gap-x-10 md:flex-col md:gap-x-0 md:w-[16vw] md:h-[45vh] md:justify-evenly md:p-10;
+        @apply flex flex-row items-center justify-between bg-black p-5 gap-x-10 md:w-[30vw] md:portrait:flex-auto md:portrait:p-7 md:justify-start md:flex-col md:landscape:gap-x-0 md:landscape:w-[16vw] md:landscape:h-[45vh] xl:landscape:p-10;
     }
 
     .animate-enlarge {
         @apply transition-all duration-300 ease-in-out lg:hover:scale-110 cursor-pointer;
+    }
+
+    .img-section {
+        @apply w-1/2 h-1/2 md:w-full md:h-fit;
+    }
+
+    .text-section {
+        @apply grow flex flex-col justify-center lg:portrait:gap-y-2 lg:portrait:mt-5;
     }
 }
