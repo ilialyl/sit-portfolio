@@ -15,33 +15,29 @@ import SwipeText from "./SwipeText.astro";
 
 <section
     id="projects"
-    class="text-white md:mt-10 relative md:h-[110vh] lg:h-screen md:snap-start portrait:h-max"
+    class="text-white md:mt-10 relative md:h-[110vh] lg:h-screen md:snap-start portrait:h-max flex flex-col"
 >
-    <div
-        class="flex flex-row justify-center md:space-x-10 pb-5 md:py-10 2xl:pb-10 2xl:pt-15 items-center mb-[2vh]"
-    >
-        <button
-            id="prev-project"
-            class="text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
-            data-aos="zoom-out"
-            data-aos-duration="2000">&lt;</button
-        >
-
-        <h2 class="text-black text-center prevent-select mt-10 md:mt-0">
-            P R O J E C T S
-        </h2>
-
-        <button
-            id="next-project"
-            class="text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
-            data-aos="zoom-out"
-            data-aos-duration="2000">&gt;</button
-        >
+    <button
+        id="prev-project"
+        class="top-1/2 left-7 z-10 absolute text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        >&lt;
+    </button>
+    <button
+        id="next-project"
+        class="top-1/2 right-7 z-10 absolute text-white font-bold text-4xl hidden md:block cursor-pointer bg-black transition-opacity duration-75 !opacity-100"
+        data-aos="zoom-out"
+        data-aos-duration="2000"
+        >&gt;
+    </button>
+    <div class="flex flex-none items-center justify-center lg:h-2/12">
+        <h2 class="text-black text-center prevent-select">P R O J E C T S</h2>
     </div>
 
     <div
         id="project-container"
-        class="card-container"
+        class="card-container no-scrollbar"
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-once="true"
