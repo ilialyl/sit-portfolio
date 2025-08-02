@@ -43,14 +43,22 @@ import Outstanding from "./certs/Outstanding.astro";
             data-aos-once="true"
         >
             <div
-                class="md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
+                class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
             >
                 <THM />
                 <IELTS />
             </div>
             <div
-                class="md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
+                class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
             >
+                <Diploma />
+                <Outstanding />
+            </div>
+            <div
+                class="card-container gap-0 md:hidden md:justify-start 2xl:justify-center md:items-start no-scrollbar md:mb-20 mx-0 px-0 flex-nowrap w-full 2xl:gap-20"
+            >
+                <THM />
+                <IELTS />
                 <Diploma />
                 <Outstanding />
             </div>
