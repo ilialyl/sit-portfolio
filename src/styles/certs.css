@@ -9,6 +9,6 @@
     }
 
     .cert-card {
-        @apply border-solid flex flex-col justify-start gap-7 lg:justify-center text-white w-full p-5 md:w-80 shrink-0 snap-center;
+        @apply border-solid flex flex-col justify-start gap-7 lg:justify-center text-white w-full p-5 md:w-80 shrink-0;
     }
 }
