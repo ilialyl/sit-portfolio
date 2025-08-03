@@ -5,7 +5,7 @@ import "../styles/profile.css";
 
 <section
     id="profile"
-    class="bg-stone-950 p-5 pt-5 md:py-10 md:snap-end flex flex-col items-center gap-15 relative"
+    class="bg-stone-950 p-5 pt-5 md:py-10 md:snap-end flex flex-col items-center gap-10 2xl:gap-15 relative"
 >
     <div
         id="toggle-profile-language"
@@ -23,7 +23,7 @@ import "../styles/profile.css";
         </h2>
     </div>
     <div
-        class="w-full flex justify-center items-start flex-row gap-x-5"
+        class="w-full flex landscape:justify-center items-start landscape:flex-row portrait:flex-col portrait:gap-x-5"
         data-aos="fade-right"
         data-aos-duration="3000"
     >
@@ -66,10 +66,6 @@ import "../styles/profile.css";
                     <li>プログラミング</li>
                 </ul>
             </li>
-
-            <li></li>
-        </ul>
-        <ul class="profile-grid">
             <li class="profile-field">
                 <p class="en-profile">Abilities</p>
                 <p class="jp-profile hidden">特技</p>
@@ -90,6 +86,32 @@ import "../styles/profile.css";
                     <li>Linux</li>
                 </ul>
             </li>
+            <li class="profile-field landscape:hidden">
+                <p class="en-profile">OSes</p>
+                <p class="jp-profile hidden">OS</p>
+            </li>
+            <li class="profile-field landscape:hidden">
+                <ul class="list-disc list-inside">
+                    <li>Windows 11</li>
+                    <li>Fedora</li>
+                </ul>
+            </li>
+
+            <li class="profile-field landscape:hidden">
+                <p class="en-profile">Programming Languages</p>
+                <p class="jp-profile hidden">プログラミング言語</p>
+            </li>
+            <li class="profile-field landscape:hidden">
+                <ul class="list-disc list-inside">
+                    <li>Rust</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C#</li>
+                </ul>
+            </li>
+            <li></li>
+        </ul>
+        <ul class="profile-grid portrait:hidden">
             <li class="profile-field">
                 <p class="en-profile">OSes</p>
                 <p class="jp-profile hidden">OS</p>
