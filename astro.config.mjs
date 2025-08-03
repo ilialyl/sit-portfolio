@@ -7,7 +7,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://cyandizy.github.io",
+  site: "https://ilialyl.github.io",
   base: "/sit-portfolio/",
 
   vite: {
