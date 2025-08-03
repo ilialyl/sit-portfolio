@@ -53,9 +53,15 @@ import Certificates from "../components/Certificates.astro";
     import "aos/dist/aos.css";
     import { toggleSnap } from "../../public/scripts/index.js";
 
+    import { toggleLanguage } from "../../public/scripts/language.js";
+
     toggleSnap("toggle-snap", "page");
 
     AOS.init({
         disable: "phone",
     });
+
+    toggleLanguage("toggle-language-btn", "jp-content", "en-content");
 </script>
+
+<script></script>

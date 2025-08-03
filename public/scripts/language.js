@@ -1,5 +1,5 @@
-export function toggleLanguage(buttonId, jpClass, enClass) {
-  const button = document.getElementById(buttonId);
+export function toggleLanguage(buttonClass, jpClass, enClass) {
+  const button = document.getElementsByClassName(buttonClass);
   const japanese = document.getElementsByClassName(jpClass);
   const english = document.getElementsByClassName(enClass);
   const Language = {
@@ -9,8 +9,8 @@ export function toggleLanguage(buttonId, jpClass, enClass) {
 
   let currentLang = Language.EN;
 
-  if (button instanceof HTMLElement)
-    button.addEventListener("click", () => {
+  for (const instance of button) {
+    instance.addEventListener("click", () => {
       if (currentLang == Language.EN) {
         for (const element of english) {
           element.classList.add("hidden");
@@ -18,7 +18,9 @@ export function toggleLanguage(buttonId, jpClass, enClass) {
         for (const element of japanese) {
           element.classList.remove("hidden");
         }
-        button.textContent = "English";
+        for (const element of button) {
+          element.textContent = "English";
+        }
         currentLang = Language.JP;
       } else {
         for (const element of english) {
@@ -27,8 +29,11 @@ export function toggleLanguage(buttonId, jpClass, enClass) {
         for (const element of japanese) {
           element.classList.add("hidden");
         }
-        button.textContent = "日本語";
+        for (const element of button) {
+          element.textContent = "日本語";
+        }
         currentLang = Language.EN;
       }
     });
+  }
 }

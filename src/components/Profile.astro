@@ -8,8 +8,7 @@ import "../styles/profile.css";
     class="bg-stone-950 p-5 pt-5 md:py-10 md:snap-end flex flex-col items-center gap-10 2xl:gap-15 relative"
 >
     <div
-        id="toggle-profile-language"
-        class="absolute top-1 right-1 md:top-5 md:right-5 prevent-select cursor-pointer bg-white text-black p-0.5 font-bold"
+        class="toggle-language-btn absolute top-1 right-1 md:top-5 md:right-5 prevent-select cursor-pointer bg-white text-black p-0.5 font-bold"
     >
         日本語
     </div>
@@ -29,36 +28,36 @@ import "../styles/profile.css";
     >
         <ul class="profile-grid">
             <li class="profile-field">
-                <p class="en-profile">Name</p>
-                <p class="jp-profile hidden">氏名</p>
+                <p class="en-content">Name</p>
+                <p class="jp-content hidden">氏名</p>
             </li>
             <li class="profile-field">
-                <p class="en-profile">Komes Pispol</p>
-                <p class="jp-profile hidden">中井イリア</p>
-            </li>
-
-            <li class="profile-field">
-                <p class="en-profile">Nationality</p>
-                <p class="jp-profile hidden">国籍</p>
-            </li>
-            <li class="profile-field">
-                <p class="en-profile">Thailand</p>
-                <p class="jp-profile hidden">タイ</p>
+                <p class="en-content">Komes Pispol</p>
+                <p class="jp-content hidden">中井イリア</p>
             </li>
 
             <li class="profile-field">
-                <p class="en-profile">Hobbies</p>
-                <p class="jp-profile hidden">興味</p>
+                <p class="en-content">Nationality</p>
+                <p class="jp-content hidden">国籍</p>
             </li>
             <li class="profile-field">
-                <ul class="en-profile list-disc list-inside">
+                <p class="en-content">Thailand</p>
+                <p class="jp-content hidden">タイ</p>
+            </li>
+
+            <li class="profile-field">
+                <p class="en-content">Hobbies</p>
+                <p class="jp-content hidden">興味</p>
+            </li>
+            <li class="profile-field">
+                <ul class="en-content list-disc list-inside">
                     <li>Video games</li>
                     <li>Exercise</li>
                     <li>Singing</li>
                     <li>Language learning</li>
                     <li>Programming</li>
                 </ul>
-                <ul class="jp-profile hidden list-disc list-inside">
+                <ul class="jp-content hidden list-disc list-inside">
                     <li>テレビゲーム</li>
                     <li>運動</li>
                     <li>歌唱</li>
@@ -67,18 +66,18 @@ import "../styles/profile.css";
                 </ul>
             </li>
             <li class="profile-field">
-                <p class="en-profile">Abilities</p>
-                <p class="jp-profile hidden">特技</p>
+                <p class="en-content">Abilities</p>
+                <p class="jp-content hidden">特技</p>
             </li>
             <li class="profile-field">
-                <ul class="en-profile list-disc list-inside">
+                <ul class="en-content list-disc list-inside">
                     <li>English</li>
                     <li>Japanese</li>
                     <li>Staying active</li>
                     <li>Eating clean</li>
                     <li>Linux</li>
                 </ul>
-                <ul class="jp-profile hidden list-disc list-inside">
+                <ul class="jp-content hidden list-disc list-inside">
                     <li>英語</li>
                     <li>日本語</li>
                     <li>よく運動をすること</li>
@@ -87,8 +86,8 @@ import "../styles/profile.css";
                 </ul>
             </li>
             <li class="profile-field landscape:hidden">
-                <p class="en-profile">OSes</p>
-                <p class="jp-profile hidden">OS</p>
+                <p class="en-content">OSes</p>
+                <p class="jp-content hidden">OS</p>
             </li>
             <li class="profile-field landscape:hidden">
                 <ul class="list-disc list-inside">
@@ -98,8 +97,8 @@ import "../styles/profile.css";
             </li>
 
             <li class="profile-field landscape:hidden">
-                <p class="en-profile">Programming Languages</p>
-                <p class="jp-profile hidden">プログラミング言語</p>
+                <p class="en-content">Programming Languages</p>
+                <p class="jp-content hidden">プログラミング言語</p>
             </li>
             <li class="profile-field landscape:hidden">
                 <ul class="list-disc list-inside">
@@ -113,8 +112,8 @@ import "../styles/profile.css";
         </ul>
         <ul class="profile-grid portrait:hidden">
             <li class="profile-field">
-                <p class="en-profile">OSes</p>
-                <p class="jp-profile hidden">OS</p>
+                <p class="en-content">OSes</p>
+                <p class="jp-content hidden">OS</p>
             </li>
             <li class="profile-field">
                 <ul class="list-disc list-inside">
@@ -124,8 +123,8 @@ import "../styles/profile.css";
             </li>
 
             <li class="profile-field">
-                <p class="en-profile">Programming Languages</p>
-                <p class="jp-profile hidden">プログラミング言語</p>
+                <p class="en-content">Programming Languages</p>
+                <p class="jp-content hidden">プログラミング言語</p>
             </li>
             <li class="profile-field">
                 <ul class="list-disc list-inside">
@@ -138,10 +137,4 @@ import "../styles/profile.css";
             <li></li>
         </ul>
     </div>
-
-    <script>
-        import { toggleLanguage } from "../../public/scripts/language.js";
-
-        toggleLanguage("toggle-profile-language", "jp-profile", "en-profile");
-    </script>
 </section>
