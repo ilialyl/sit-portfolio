@@ -19,4 +19,8 @@
     .text-section {
         @apply grow flex flex-col justify-center lg:portrait:gap-y-2 lg:portrait:mt-5;
     }
+
+    .school-years {
+        @apply font-semibold font-mono 2xl:text-2xl;
+    }
 }
