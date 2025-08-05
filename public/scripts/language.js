@@ -19,7 +19,7 @@ export function toggleLanguage(buttonClass, jpClass, enClass) {
           element.classList.remove("hidden");
         }
         for (const element of button) {
-          element.textContent = "English";
+          element.textContent = "EN";
         }
         currentLang = Language.JP;
       } else {
@@ -30,7 +30,7 @@ export function toggleLanguage(buttonClass, jpClass, enClass) {
           element.classList.add("hidden");
         }
         for (const element of button) {
-          element.textContent = "日本語";
+          element.textContent = "JP";
         }
         currentLang = Language.EN;
       }
