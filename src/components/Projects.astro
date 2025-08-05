@@ -31,15 +31,28 @@ import SwipeText from "./SwipeText.astro";
         data-aos-duration="2000"
         >&gt;
     </button>
-    <div
-        class="flex flex-none items-center justify-center h-2/12 my-10 md:my-0 md:h-1/12 xl:h-2/12"
-    >
-        <h2 class="text-black text-center prevent-select">P R O J E C T S</h2>
+    <div class="h-max w-full landscape:absolute">
+        <div
+            class="absolute portrait:w-3/4 landscape:w-1/2 h-12 bg-gray-300 mt-14 md:mt-25 rounded-tr-4xl rounded-br-4xl"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            data-aos-easing="ease-out"
+        >
+        </div>
+
+        <h1
+            class="text-black text-3xl md:text-5xl font-medium relative pt-10 pl-7 md:pl-20 md:pt-20 prevent-select portrait:mb-10"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-easing="ease-out"
+        >
+            PROJECTS <span class="text-lg"> プロジェクト </span>
+        </h1>
     </div>
 
     <div
         id="project-container"
-        class="card-container no-scrollbar"
+        class="card-container no-scrollbar landscape:items-center grow"
         data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-once="true"
