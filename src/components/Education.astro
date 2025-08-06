@@ -6,7 +6,7 @@ import "../styles/education.css";
 <section id="education" class="md:h-screen md:snap-center flex flex-col">
     <div class="h-max w-full landscape:absolute">
         <div
-            class="absolute portrait:w-3/4 landscape:w-1/2 h-12 bg-gray-300 mt-14 md:mt-25 rounded-tr-4xl rounded-br-4xl"
+            class="absolute portrait:w-3/4 landscape:w-1/2 h-12 bg-gray-300 mt-12 landscape:md:mt-25 portrait:md:mt-22 rounded-tr-4xl rounded-br-4xl"
             data-aos="fade-right"
             data-aos-duration="3000"
             data-aos-easing="ease-out"
@@ -14,14 +14,17 @@ import "../styles/education.css";
         </div>
 
         <h1
-            class="text-3xl md:text-5xl font-medium relative pt-10 pl-7 md:pl-20 md:pt-20 prevent-select portrait:mb-10"
+            class="portrait:text-3xl/5 portrait:md:text-5xl/5 landscape:text-3xl landscape:md:text-5xl font-medium relative pt-10 pl-7 md:pl-20 md:pt-20 prevent-select portrait:mb-10"
             data-aos="fade-up"
             data-aos-duration="3000"
             data-aos-easing="ease-out"
         >
-            EDUCATION <span class="text-lg"
-                ><ruby>学歴<rt>がくれき</rt></ruby></span
-            >
+            EDUCATION
+            <br class="hidden portrait:block" />
+            <ruby class="text-lg portrait:text-sm portrait:md:text-base">
+                学歴
+                <rt class="portrait:inline">がくれき</rt>
+            </ruby>
         </h1>
     </div>
     <div
