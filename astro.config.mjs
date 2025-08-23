@@ -16,13 +16,6 @@ export default defineConfig({
     ssr: {
       noExternal: ["webcoreui"],
     },
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: "modern-compiler",
-        },
-      },
-    },
   },
 
   integrations: [webcore(), icon()],
