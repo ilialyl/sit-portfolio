@@ -8,20 +8,12 @@
 @custom-variant landscape ( @media (orientation: landscape) );
 
 @custom-variant 2xs ( @media (min-width: 300px) );
-@custom-variant xs  ( @media (max-width: 575px) ); // Mobile (iPhone 3 - iPhone XS Max).
-@custom-variant sm  ( @media (min-width: 576px) and (max-width: 897px) ); // Mobile (matches max: iPhone 11 Pro Max landscape @ 896px).
-@custom-variant md  ( @media (min-width: 898px) and (max-width: 1199px) ); // Tablet (matches max: iPad Pro @ 1112px).
-@custom-variant lg  ( @media (min-width: 1200px) ); // Desktop smallest.
-@custom-variant xl  ( @media (min-width: 1259px) ); // Desktop wide.
-@custom-variant 2xl ( @media (min-width: 1359px) ); // Desktop widescreen.
-
-h1 {
-    @apply text-4xl font-bold;
-}
-
-h2 {
-    @apply text-3xl font-semibold;
-}
+@custom-variant xs  ( @media (max-width: 575px) );
+@custom-variant sm  ( @media (min-width: 576px) and (max-width: 897px) );
+@custom-variant md  ( @media (min-width: 898px) and (max-width: 1199px) );
+@custom-variant lg  ( @media (min-width: 1200px) );
+@custom-variant xl  ( @media (min-width: 1259px) );
+@custom-variant 2xl ( @media (min-width: 1359px) );
 
 h3 {
     @apply text-2xl;
