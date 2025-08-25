@@ -5,7 +5,7 @@
 
 @layer components {
     .school-card {
-        @apply flex flex-row items-center justify-between bg-black p-5 gap-x-10 md:w-[30vw] md:portrait:flex-auto md:portrait:p-7 md:justify-start md:flex-col md:landscape:gap-x-0 md:landscape:w-[16vw] md:landscape:h-[45vh] xl:landscape:p-10;
+        @apply flex flex-row items-center justify-between bg-black border-solid border-3 p-5 gap-x-10 md:w-[30vw] md:portrait:flex-auto md:portrait:p-7 md:justify-start md:flex-col md:landscape:gap-x-0 md:landscape:w-[16vw] md:landscape:h-[45vh] xl:landscape:p-10;
     }
 
     .animate-enlarge {
