@@ -10,66 +10,65 @@ import Certificates from "../components/Certificates.astro";
 ---
 
 <html
-    lang="en"
-    class="scroll-smooth no-scrollbar md:h-screen snap-y snap-mandatory overflow-y-auto"
-    id="page"
+  lang="en"
+  class="scroll-smooth no-scrollbar md:h-screen snap-y snap-mandatory overflow-y-auto"
+  id="page"
 >
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="./favicon.png" } />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Portfolio - Ilya</title>
-    </head>
-    <body>
-        <header>
-            <NavBar />
-            <div
-                class="toggle-language-btn fixed top-1 right-13 z-11 border-white border-1 md:top-5 md:right-17 prevent-select cursor-pointer bg-black text-white p-1 font-bold portrait:[writing-mode:sideways-lr] landscape:[writing-mode:horizontal-tb]"
-                data-aos="zoom-out"
-                data-aos-delay="200"
-                data-aos-duration="2000"
-            >
-                JP
-            </div>
-        </header>
-        <main class="mr-12">
-            <Preface />
-            <Profile />
-            <Education />
-            <Projects />
-            <Certificates />
-            <div>
-                <p class="text-center my-20">
-                    For security purposes, more can be found inside the PDF
-                    version.
-                </p>
-            </div>
-            <Contact />
-        </main>
-        <div
-            id="toggle-snap"
-            class="fixed left-0 bottom-0 bg-blue-300 cursor-pointer p-1 text-xs hidden md:block hover:bg-black hover:text-blue-500 font-bold prevent-select [writing-mode:vertical-lr] transition-colors duration-500"
-        >
-            Toggle snap
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./favicon.png" } />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio - Ilya</title>
+  </head>
+  <body>
+    <header>
+      <NavBar />
+      <div
+        class="toggle-language-btn fixed top-1 right-13 z-11 border-white border-1 md:top-5 md:right-17 prevent-select cursor-pointer bg-black text-white p-1 font-bold portrait:[writing-mode:sideways-lr] landscape:[writing-mode:horizontal-tb]"
+        data-aos="zoom-out"
+        data-aos-delay="200"
+        data-aos-duration="2000"
+      >
+        JP
+      </div>
+    </header>
+    <main class="mr-12">
+      <Preface />
+      <Profile />
+      <Education />
+      <Projects />
+      <Certificates />
+      <div>
+        <p class="text-center my-20">
+          For security purposes, more can be found inside the PDF version.
+        </p>
+      </div>
+      <Contact />
+    </main>
+    <div
+      id="toggle-snap"
+      class="fixed left-0 bottom-0 bg-blue-300 cursor-pointer p-1 text-xs hidden md:block hover:bg-black hover:text-blue-500 font-bold prevent-select [writing-mode:vertical-lr] transition-colors duration-500"
+    >
+      Toggle snap
+    </div>
+  </body>
 </html>
 
 <script>
-    import AOS from "aos";
-    import "aos/dist/aos.css";
-    import { toggleSnap } from "../../public/scripts/index.js";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  import { toggleSnap } from "../../public/scripts/index.js";
 
-    import { toggleLanguage } from "../../public/scripts/language.js";
+  import { toggleLanguage } from "../../public/scripts/language.js";
 
-    toggleSnap("toggle-snap", "page");
+  toggleSnap("toggle-snap", "page");
 
-    AOS.init({
-        disable: "phone",
-    });
+  AOS.init({
+    disable: "phone",
+  });
 
-    toggleLanguage("toggle-language-btn", "jp-content", "en-content");
+  toggleLanguage("toggle-language-btn", "jp-content", "en-content");
 </script>
 
 <script></script>

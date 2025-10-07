@@ -4,7 +4,7 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @layer components {
-    .indent {
-        @apply ml-5;
-    }
+  .indent {
+    @apply ml-5;
+  }
 }

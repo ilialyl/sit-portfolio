@@ -5,86 +5,84 @@ import Typewriter from "astro-typewriter";
 ---
 
 <div
-    id="preface"
-    class="p-7 md:mx-auto md:py-0 lg:p-10 md:h-screen md:snap-center md:flex md:flex-col md:justify-center md:gap-[7vh] lg:gap-10 xl:p-30 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-between lg:items-center md:portrait:flex md:portrait:flex-col md:portrait:justify-center md:portrait:gap-[5vh] lg:portrait:gap-[10vh] md:portrait:items-start md:portrait:p-20"
+  id="preface"
+  class="p-7 md:mx-auto md:py-0 lg:p-10 md:h-screen md:snap-center md:flex md:flex-col md:justify-center md:gap-[7vh] lg:gap-10 xl:p-30 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-between lg:items-center md:portrait:flex md:portrait:flex-col md:portrait:justify-center md:portrait:gap-[5vh] lg:portrait:gap-[10vh] md:portrait:items-start md:portrait:p-20"
 >
+  <div
+    class="md:flex md:flex-col md:justify-between md:items-start gap-y-10 hidden"
+  >
+    <Typewriter
+      class="md:text-7xl lg:text-8xl font-semibold"
+      messages={[`Komes Pispol`, "中井イリヤ"]}
+      writeSpeed={250}
+      deleteSpeed={250}
+      waitWritten={5000}
+      waitDeleted={0}
+    />
+    <p class="en-content md:text-3xl lg:text-4xl">
+      An Aspiring CS student with strong foundation.
+    </p>
+    <p class="jp-content hidden md:text-3xl lg:text-4xl">
+      基礎を持って、CSを目指している学生。
+    </p>
+  </div>
+  <div>
     <div
-        class="md:flex md:flex-col md:justify-between md:items-start gap-y-10 hidden"
+      class="en-content mt-4 ml-2 mr-1 md:m-0 md:text-base/6 xl:text-base/8 2xl:text-base/10 md:portrait:text-base/10 lg:portrait:text-base/12"
+      data-aos="fade-left"
+      data-aos-duration="3000"
+      data-aos-mirror="true"
     >
-        <Typewriter
-            class="md:text-7xl lg:text-8xl font-semibold"
-            messages={[`Komes Pispol`, "中井イリヤ"]}
-            writeSpeed={250}
-            deleteSpeed={250}
-            waitWritten={5000}
-            waitDeleted={0}
-        />
-        <p class="en-content md:text-3xl lg:text-4xl">
-            An Aspiring CS student with strong foundation.
-        </p>
-        <p class="jp-content hidden md:text-3xl lg:text-4xl">
-            基礎を持って、CSを目指している学生。
-        </p>
+      <p class="text-3xl md:text-4xl inline font-bold">
+        "It all occurred to me when I was 16 years old.
+      </p>
+      <br /><br class="md:hidden" />
+      <p>
+        Having chosen an “Introduction to Web Programming” class, I came into a
+        realization that art of programming is not out of my reach. From there I
+        continued to explore various topics, from scripting languages like
+        Python, to low level languages such as C and Rust. I could not and still
+        cannot imagine any other fields I can enjoy other than the field of
+        Computer Science. After high school graduation, I took a gap year to
+        learn about the outside of Thailand. I went to Curtin College in Perth,
+        Australia to study Diploma of Information and Technology (Computer
+        Science), where I faced multiple challenges and learned from them. As I
+        have completed my diploma, I have been continuously learning new topics,
+        such as Cybersecurity and Game Development. All of this is to show that,
+        I, indeed, take this path of Computer Science seriously. For now I look
+        forward to studying at School of Information and Technology (SIT) at
+        King Mongkut's University of Technology Thonburi (KMUTT) where I
+        originally intended to attend."
+      </p>
+      <footer class="mt-10 md:hidden">- <cite>Komes Pispol</cite></footer>
     </div>
-    <div>
-        <div
-            class="en-content mt-4 ml-2 mr-1 md:m-0 md:text-base/6 xl:text-base/8 2xl:text-base/10 md:portrait:text-base/10 lg:portrait:text-base/12"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            data-aos-mirror="true"
-        >
-            <p class="text-3xl md:text-4xl inline font-bold">
-                "It all occurred to me when I was 16 years old.
-            </p>
-            <br /><br class="md:hidden" />
-            <p>
-                Having chosen an “Introduction to Web Programming” class, I came
-                into a realization that art of programming is not out of my
-                reach. From there I continued to explore various topics, from
-                scripting languages like Python, to low level languages such as
-                C and Rust. I could not and still cannot imagine any other
-                fields I can enjoy other than the field of Computer Science.
-                After high school graduation, I took a gap year to learn about
-                the outside of Thailand. I went to Curtin College in Perth,
-                Australia to study Diploma of Information and Technology
-                (Computer Science), where I faced multiple challenges and
-                learned from them. As I have completed my diploma, I have been
-                continuously learning new topics, such as Cybersecurity and Game
-                Development. All of this is to show that, I, indeed, take this
-                path of Computer Science seriously. For now I look forward to
-                studying at School of Information and Technology (SIT) at King
-                Mongkut's University of Technology Thonburi (KMUTT) where I
-                originally intended to attend."
-            </p>
-            <footer class="mt-10 md:hidden">- <cite>Komes Pispol</cite></footer>
-        </div>
-        <div
-            class="jp-content mt-4 ml-2 mr-1 md:m-0 md:text-base/10 hidden"
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            data-aos-mirror="true"
-        >
-            <p class="text-3xl md:text-4xl inline font-bold">
-                それは、16歳の時でした。
-            </p>
-            <br /><br class="md:hidden" />
-            <p>
-                「Web プログラミング
-                の紹介」のクラスを選んで、私はプログラミングが好きのことは気づきました。それから、色んなことを学ぶ続きました。スクリプト言語の
-                Python だったり、低水準言語の C や Rust
-                だったりします。その時はもうはや別の専門に働くことは想像出来ませんでした。
-                高校卒業のあと、私は留学することになりました。オーストラリアの
-                「Curtin College」
-                に行って、様々な挑戦を向かって、大分習いました。あの専門学校から卒業する今も、毎日多種なトピックを学んでいます。例えば
-                「サイバーセキュリティー」とか「ゲーム開発」とかです。
-                これら全ては、私がコンピュータサイエンスの進路を真剣にしていることの証です。これからは
-                「King Mongkut's University of Technology Thonburi」に「School
-                of Information and
-                Technology」でコンピュータサイエンスを学ぶことを期待しています。
-            </p>
-            <footer class="mt-10 md:hidden">
-                - <cite>中井イリア</cite>
-            </footer>
-        </div>
+    <div
+      class="jp-content mt-4 ml-2 mr-1 md:m-0 md:text-base/10 hidden"
+      data-aos="fade-left"
+      data-aos-duration="3000"
+      data-aos-mirror="true"
+    >
+      <p class="text-3xl md:text-4xl inline font-bold">
+        それは、16歳の時でした。
+      </p>
+      <br /><br class="md:hidden" />
+      <p>
+        「Web プログラミング
+        の紹介」のクラスを選んで、私はプログラミングが好きのことは気づきました。それから、色んなことを学ぶ続きました。スクリプト言語の
+        Python だったり、低水準言語の C や Rust
+        だったりします。その時はもうはや別の専門に働くことは想像出来ませんでした。
+        高校卒業のあと、私は留学することになりました。オーストラリアの 「Curtin
+        College」
+        に行って、様々な挑戦を向かって、大分習いました。あの専門学校から卒業する今も、毎日多種なトピックを学んでいます。例えば
+        「サイバーセキュリティー」とか「ゲーム開発」とかです。
+        これら全ては、私がコンピュータサイエンスの進路を真剣にしていることの証です。これからは
+        「King Mongkut's University of Technology Thonburi」に「School of
+        Information and
+        Technology」でコンピュータサイエンスを学ぶことを期待しています。
+      </p>
+      <footer class="mt-10 md:hidden">
+        - <cite>中井イリア</cite>
+      </footer>
     </div>
+  </div>
 </div>

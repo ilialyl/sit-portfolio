@@ -4,11 +4,11 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @layer components {
-    .project-card {
-        @apply text-sm 2xl:text-base border-solid  bg-stone-950 border-3 flex flex-col lg:landscape:flex-row justify-start gap-6 lg:landscape:gap-0 lg:portrait:gap-10 lg:landscape:gap-x-5 lg:landscape:justify-evenly lg:portrait:h-full lg:portrait:justify-between text-white w-full p-5 md:w-[90vw] md:p-10 flex-none snap-center rounded-2xl;
-    }
+  .project-card {
+    @apply text-sm 2xl:text-base border-solid  bg-stone-950 border-3 flex flex-col lg:landscape:flex-row justify-start gap-6 lg:landscape:gap-0 lg:portrait:gap-10 lg:landscape:gap-x-5 lg:landscape:justify-evenly lg:portrait:h-full lg:portrait:justify-between text-white w-full p-5 md:w-[90vw] md:p-10 flex-none snap-center rounded-2xl;
+  }
 
-    .card-container {
-        @apply overflow-x-auto flex flex-row h-fit snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] md:px-[10vw] items-start lg:landscape:items-stretch;
-    }
+  .card-container {
+    @apply overflow-x-auto flex flex-row h-fit snap-x snap-mandatory scroll-smooth gap-40 px-[2vw] md:px-[10vw] items-start lg:landscape:items-stretch;
+  }
 }

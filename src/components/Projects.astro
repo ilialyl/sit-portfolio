@@ -15,72 +15,72 @@ import SwipeText from "./SwipeText.astro";
 ---
 
 <section
-    id="projects"
-    class="text-white mt-10 relative lg:h-screen md:snap-start md:portrait:h-screen flex flex-col"
+  id="projects"
+  class="text-white mt-10 relative lg:h-screen md:snap-start md:portrait:h-screen flex flex-col"
 >
-    <button
-        id="prev-project"
-        class="top-1/2 left-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
-        data-aos="zoom-out"
-        data-aos-duration="2000"
-        >&lt;
-    </button>
-    <button
-        id="next-project"
-        class="top-1/2 right-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
-        data-aos="zoom-out"
-        data-aos-duration="2000"
-        >&gt;
-    </button>
-    <div class="h-max w-full landscape:absolute">
-        <div
-            class="white-sect-heading-decor"
-            data-aos="fade-right"
-            data-aos-duration="3000"
-            data-aos-easing="ease-out"
-        >
-        </div>
-
-        <h1
-            class="text-black white-sect-heading prevent-select"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            data-aos-easing="ease-out"
-        >
-            PROJECTS
-            <br class="hidden portrait:block" />
-            <ruby class="text-lg portrait:text-sm portrait:md:text-base">
-                プロジェクト
-            </ruby>
-        </h1>
-    </div>
-
+  <button
+    id="prev-project"
+    class="top-1/2 left-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
+    data-aos="zoom-out"
+    data-aos-duration="2000"
+    >&lt;
+  </button>
+  <button
+    id="next-project"
+    class="top-1/2 right-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
+    data-aos="zoom-out"
+    data-aos-duration="2000"
+    >&gt;
+  </button>
+  <div class="h-max w-full landscape:absolute">
     <div
-        id="project-container"
-        class="card-container no-scrollbar landscape:items-center grow"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-        data-aos-once="true"
+      class="white-sect-heading-decor"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      data-aos-easing="ease-out"
     >
-        <Firefly />
-        <Dsa />
-        <Arino />
-        <VisualLog />
-        <Fedora />
-        <Isen />
-        <FedoraServer />
     </div>
+
+    <h1
+      class="text-black white-sect-heading prevent-select"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-easing="ease-out"
+    >
+      PROJECTS
+      <br class="hidden portrait:block" />
+      <ruby class="text-lg portrait:text-sm portrait:md:text-base">
+        プロジェクト
+      </ruby>
+    </h1>
+  </div>
+
+  <div
+    id="project-container"
+    class="card-container no-scrollbar landscape:items-center grow"
+    data-aos="fade-right"
+    data-aos-duration="2000"
+    data-aos-once="true"
+  >
+    <Firefly />
+    <Dsa />
+    <Arino />
+    <VisualLog />
+    <Fedora />
+    <Isen />
+    <FedoraServer />
+  </div>
 </section>
 <SwipeText />
 
 <script>
-    import { swiper } from "../../public/scripts/swiper.js";
+  import { swiper } from "../../public/scripts/swiper.js";
 
-    // Get scrollable area
-    const container = document.getElementById("project-container");
-    // Get buttons
-    const next = document.getElementById("next-project");
-    const prev = document.getElementById("prev-project");
+  // Get scrollable area
+  const container = document.getElementById("project-container");
+  // Get buttons
+  const next = document.getElementById("next-project");
+  const prev = document.getElementById("prev-project");
 
-    swiper(container, next, prev, ".project-card");
+  swiper(container, next, prev, ".project-card");
 </script>

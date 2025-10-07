@@ -10,71 +10,71 @@ import Outstanding from "./certs/Outstanding.astro";
 ---
 
 <section
-    id="certs"
-    class="bg-stone-900 pb-5 text-white md:snap-end overflow-x-hidden relative"
+  id="certs"
+  class="bg-stone-900 pb-5 text-white md:snap-end overflow-x-hidden relative"
 >
-    <button
-        id="prev-cert"
-        class="top-1/2 left-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
-        data-aos="zoom-out"
-        data-aos-duration="2000"
-        >&lt;
-    </button>
-    <button
-        id="next-cert"
-        class="top-1/2 right-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
-        data-aos="zoom-out"
-        data-aos-duration="2000"
-        >&gt;
-    </button>
-    <div>
-        <div
-            class="flex flex-row justify-center md:space-x-10 items-center md:pb-15 md:pt-10"
-        >
-            <h2 class="py-10 text-center prevent-select text-3xl font-semibold">
-                C E R T I F I C A T E S
-            </h2>
-        </div>
-        <div
-            id="cert-container"
-            class="card-container gap-0 md:justify-start 2xl:justify-center md:items-start no-scrollbar md:mb-20 mx-0 px-0 flex-nowrap w-full 2xl:gap-20"
-            data-aos="fade-zoom-in"
-            data-aos-duration="2000"
-            data-aos-once="true"
-        >
-            <div
-                class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
-            >
-                <Diploma />
-                <THM />
-            </div>
-            <div
-                class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
-            >
-                <IELTS />
-                <Outstanding />
-            </div>
-            <div
-                class="card-container gap-0 md:hidden md:justify-start 2xl:justify-center md:items-start no-scrollbar md:mb-20 mx-0 px-0 flex-nowrap w-full 2xl:gap-20"
-            >
-                <Diploma />
-                <THM />
-                <IELTS />
-                <Outstanding />
-            </div>
-        </div>
+  <button
+    id="prev-cert"
+    class="top-1/2 left-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
+    data-aos="zoom-out"
+    data-aos-duration="2000"
+    >&lt;
+  </button>
+  <button
+    id="next-cert"
+    class="top-1/2 right-7 z-10 absolute text-white bg-black md:portrait:bg-white md:portrait:text-black font-bold text-4xl hidden md:block cursor-pointer transition-opacity duration-75 !opacity-100"
+    data-aos="zoom-out"
+    data-aos-duration="2000"
+    >&gt;
+  </button>
+  <div>
+    <div
+      class="flex flex-row justify-center md:space-x-10 items-center md:pb-15 md:pt-10"
+    >
+      <h2 class="py-10 text-center prevent-select text-3xl font-semibold">
+        C E R T I F I C A T E S
+      </h2>
     </div>
-    <SwipeText />
+    <div
+      id="cert-container"
+      class="card-container gap-0 md:justify-start 2xl:justify-center md:items-start no-scrollbar md:mb-20 mx-0 px-0 flex-nowrap w-full 2xl:gap-20"
+      data-aos="fade-zoom-in"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
+      <div
+        class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
+      >
+        <Diploma />
+        <THM />
+      </div>
+      <div
+        class="hidden md:flex md:flex-row md:flex-nowrap md:items-start md:snap-center md:justify-evenly md:w-full overflow-hidden md:shrink-0 2xl:w-auto 2xl:gap-20 snap-mandatory"
+      >
+        <IELTS />
+        <Outstanding />
+      </div>
+      <div
+        class="card-container gap-0 md:hidden md:justify-start 2xl:justify-center md:items-start no-scrollbar md:mb-20 mx-0 px-0 flex-nowrap w-full 2xl:gap-20"
+      >
+        <Diploma />
+        <THM />
+        <IELTS />
+        <Outstanding />
+      </div>
+    </div>
+  </div>
+  <SwipeText />
 </section>
 
 <script>
-    import { swiper } from "../../public/scripts/swiper.js";
+  import { swiper } from "../../public/scripts/swiper.js";
 
-    // Get scrollable area
-    const container = document.getElementById("cert-container");
-    // Get buttons
-    const next = document.getElementById("next-cert");
-    const prev = document.getElementById("prev-cert");
+  // Get scrollable area
+  const container = document.getElementById("cert-container");
+  // Get buttons
+  const next = document.getElementById("next-cert");
+  const prev = document.getElementById("prev-cert");
 
-    swiper(container, next, prev, ".cert-card");
+  swiper(container, next, prev, ".cert-card");
 </script>
