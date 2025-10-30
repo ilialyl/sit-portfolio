@@ -65,7 +65,7 @@ import Certificates from "../components/Certificates.astro";
   toggleSnap("toggle-snap", "page");
 
   AOS.init({
-    disable: "phone",
+    disable: () => window.innerWidth < 1000, // Smaller than laptop
   });
 
   toggleLanguage("toggle-language-btn", "jp-content", "en-content");
