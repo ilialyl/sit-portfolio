@@ -2,12 +2,12 @@
 import { Carousel } from "webcoreui/astro";
 import "../../styles/projects.css";
 
-const { title, shortDesc, images } = Astro.props;
+const { id, title, shortDesc, images } = Astro.props;
 ---
 
-<div id={title.toLowerCase()} class="project-card">
+<div class="project-card">
   <div class="md:landscape:w-1/2 flex flex-col min-h-0 space-y-2">
-    <div class="space-y-4 shrink-0">
+    <div class="space-y-4 mb-5 shrink-0">
       <h3 class="font-bold en-content">{title}</h3>
       <h4 class="font-bold text-gray-400">{shortDesc}</h4>
     </div>

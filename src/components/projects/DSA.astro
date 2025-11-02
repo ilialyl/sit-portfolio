@@ -1,8 +1,47 @@
 ---
-import { Carousel } from "webcoreui/astro";
-import "../../styles/projects.css";
+import ProjectCard from "./ProjectCard.astro";
 ---
 
+<ProjectCard
+  title="Data Structure and Algorithms"
+  shortDesc="Curtin College's Final Coursework"
+  images={["projects/dsa_1.png", "projects/dsa_2.png", "projects/dsa_3.png"]}
+>
+  <li class="font-bold text-blue-400 list-disc list-inside">
+    Commits: 2025-05-04 to 2025-05-17
+  </li>
+  <p>
+    A command-line Bank Account Management System focused on self-implemented
+    data structures in a practical context. While the design followed course
+    guidelines, I used the opportunity to demonstrate my understanding of Data
+    Structure and Algorithm.
+  </p>
+  <ul class="list-disc list-inside pl-4 space-y-2">
+    <li>
+      I implemented a Binary Search Tree (BST) to store and manage multiple bank
+      accounts.
+    </li>
+    <li>
+      I have a Queue implemented via a Linked List, which is used during BST
+      traversal to save the order of nodes visited.
+    </li>
+    <li>
+      The command-line interface (CLI) can take user commands which each of them
+      has aliases, and command history, improving user experience.
+    </li>
+    <li>I had unit tests fully implemented.</li>
+    <li>The code is modular and scalable.</li>
+  </ul>
+  <p>
+    For more details, visit <a
+      class="text-blue-400 font-semibold"
+      href="https://github.com/ilialyl/DSAFinal"
+      target="_blank"
+      rel="noopener noreferrer">DSAFinal</a
+    >
+  </p>
+</ProjectCard>
+<!--
 <div id="dsa" class="project-card">
   <div class="space-y-4 md:landscape:w-1/2">
     <h3 class="font-bold">Data Structure and Algorithms</h3>
@@ -61,4 +100,4 @@ import "../../styles/projects.css";
       </li>
     </Carousel>
   </div>
-</div>
+</div> -->

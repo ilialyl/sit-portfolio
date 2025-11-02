@@ -1,48 +1,30 @@
 ---
-import { Carousel } from "webcoreui/astro";
-import "../../styles/projects.css";
+import ProjectCard from "./ProjectCard.astro";
 ---
 
-<div id="arino" class="project-card">
-  <div class="space-y-4 md:landscape:w-1/2">
-    <h3 class="font-bold">Arino</h3>
-    <h4 class="font-bold text-gray-400">
-      An ingredient inventory management tool
-    </h4>
-    <ul class="font-bold text-blue-400 list-disc list-inside">
-      <li>First Commit: 2024-08-31</li>
-      <li>Most Recent Commit: 2025-08-04</li>
-    </ul>
-    <p>
-      Built in Rust in a Unix-style command-line interface to integrate with
-      other CLI tools such as grep and shell pipelines.
-      <br /><br />
-      The data is stored in a local SQLite database and can be automatically synced
-      to Cloud storage using Dropbox API for portability. It allows manual data updates
-      and dish planning based on what ingredients you currently have.
-    </p>
+<ProjectCard
+  title="Arino"
+  shortDesc="An ingredient inventory management tool."
+  images={["projects/arino_2.png", "projects/arino_3.png"]}
+>
+  <ul class="font-bold text-blue-400 list-disc list-inside">
+    <li>Commits: 2024-08-31 to 2025-08-04</li>
+  </ul>
+  <p>
+    Built in Rust in a Unix-style command-line interface to integrate with other
+    CLI tools such as grep and shell pipelines.
+    <br /><br />
+    The data is stored in a local SQLite database and can be automatically synced
+    to Cloud storage using Dropbox API for portability. It allows manual data updates
+    and dish planning based on what ingredients you currently have.
+  </p>
 
-    <p>
-      More info available at the <a
-        class="text-blue-400 font-semibold"
-        href="https://github.com/ilialyl/Arino"
-        target="_blank"
-        rel="noopener noreferrer">project repo</a
-      >
-    </p>
-  </div>
-  <div class="md:landscape:w-1/2">
-    <Carousel items={2}>
-      <li>
-        <a href="projects/arino_2.png" target="_blank" rel="noopener noreferrer"
-          ><img src="./projects/arino_2.png" /></a
-        >
-      </li>
-      <li>
-        <a href="projects/arino_3.png" target="_blank" rel="noopener noreferrer"
-          ><img src="./projects/arino_3.png" /></a
-        >
-      </li>
-    </Carousel>
-  </div>
-</div>
+  <p>
+    More info available at the <a
+      class="text-blue-400 font-semibold"
+      href="https://github.com/ilialyl/Arino"
+      target="_blank"
+      rel="noopener noreferrer">project repo</a
+    >
+  </p>
+</ProjectCard>
