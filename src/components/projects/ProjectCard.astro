@@ -1,0 +1,32 @@
+---
+import { Carousel } from "webcoreui/astro";
+import "../../styles/projects.css";
+
+const { title, shortDesc, images } = Astro.props;
+---
+
+<div id={title.toLowerCase()} class="project-card">
+  <div class="md:landscape:w-1/2 flex flex-col min-h-0 space-y-2">
+    <div class="space-y-4 shrink-0">
+      <h3 class="font-bold en-content">{title}</h3>
+      <h4 class="font-bold text-gray-400">{shortDesc}</h4>
+    </div>
+    <div class="space-y-4 overflow-y-auto">
+      <slot />
+    </div>
+  </div>
+
+  <div class="md:landscape:w-1/2">
+    <Carousel items={images.length}>
+      {
+        images.map((src) => (
+          <li class="w-full h-full flex items-center justify-center">
+            <a href={src} target="_blank" rel="noopener noreferrer">
+              <img src={src} />
+            </a>
+          </li>
+        ))
+      }
+    </Carousel>
+  </div>
+</div>
