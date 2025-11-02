@@ -35,14 +35,14 @@ export function swiper(container, next, prev, cardId) {
 
       function scrollNext() {
         container?.scrollBy({
-          left: cardWidth,
+          left: cardWidth + 160,
           behavior: "smooth",
         });
       }
 
       function scrollPrev() {
         container?.scrollBy({
-          left: -cardWidth,
+          left: -cardWidth - 160,
           behavior: "smooth",
         });
       }
