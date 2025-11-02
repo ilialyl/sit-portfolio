@@ -6,13 +6,19 @@ const { id, title, shortDesc, images } = Astro.props;
 ---
 
 <div class="project-card">
-  <div class="md:landscape:w-1/2 flex flex-col min-h-0 space-y-2">
+  <div class="md:landscape:w-1/2 flex flex-col min-h-0 space-y-2 relative">
     <div class="space-y-4 mb-5 shrink-0">
-      <h3 class="font-bold en-content">{title}</h3>
+      <h3 class="font-bold">{title}</h3>
       <h4 class="font-bold text-gray-400">{shortDesc}</h4>
     </div>
     <div class="space-y-4 overflow-y-auto">
       <slot />
+      <br class="landscape:hidden" />
+      <br class="landscape:hidden" />
+    </div>
+    <div
+      class="landscape:hidden absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-stone-950 via-stone-950/80 to-transparent"
+    >
     </div>
   </div>
 
